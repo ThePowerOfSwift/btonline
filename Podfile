@@ -4,10 +4,10 @@ inhibit_all_warnings!
 use_frameworks!
 install! 'cocoapods', :deterministic_uuids => false
 
-workspace 'MyApp.xcworkspace'
+workspace 'BTOnline.xcworkspace'
 
-target 'MyApp' do
-    project 'MyApp'
+target 'BTOnline' do
+    project 'BTOnline'
 
     # Architect
     pod 'MVVM-Swift', '1.1.0' # MVVM Architect for iOS Application.
@@ -42,7 +42,7 @@ target 'MyApp' do
     pod 'Fabric'
     pod 'Crashlytics'
 
-target 'MyAppTests' do
+target 'BTOnlineTests' do
     inherit! :complete
 end
 

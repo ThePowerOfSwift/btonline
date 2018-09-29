@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import MyApp
+@testable import BTOnline
 
 final class StringTests: XCTestCase {
 
