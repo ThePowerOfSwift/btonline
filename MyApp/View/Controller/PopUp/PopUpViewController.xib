@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewController" customModule="MyApp" customModuleProvider="target">
+            <connections>
+                <outlet property="popUpTableView" destination="E9L-MN-7eI" id="6eI-Qc-0i5"/>
+                <outlet property="popupHeight" destination="cdg-gh-1hj" id="BfX-y3-V3p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRX-dH-5es">
+                    <rect key="frame" x="0.0" y="466.5" width="375" height="200"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OhQ-A3-x9z">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m00-Fk-SUI">
+                                    <rect key="frame" x="17" y="12" width="17" height="16.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="m00-Fk-SUI" secondAttribute="height" multiplier="1:1" id="lR1-ao-Ox4"/>
+                                    </constraints>
+                                    <state key="normal" image="img_button_delete"/>
+                                    <connections>
+                                        <action selector="closePopUpButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="neb-Nc-vPN"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1z-ZM-MAF">
+                                    <rect key="frame" x="164" y="9.5" width="48.5" height="21"/>
+                                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="o1z-ZM-MAF" firstAttribute="centerX" secondItem="OhQ-A3-x9z" secondAttribute="centerX" id="0YK-xj-5iw"/>
+                                <constraint firstItem="o1z-ZM-MAF" firstAttribute="centerY" secondItem="OhQ-A3-x9z" secondAttribute="centerY" id="W5I-RF-5m1"/>
+                                <constraint firstItem="m00-Fk-SUI" firstAttribute="height" secondItem="OhQ-A3-x9z" secondAttribute="height" multiplier="3:7" id="ZRB-Be-Jgh"/>
+                                <constraint firstAttribute="height" constant="40" id="gum-7A-TkM"/>
+                                <constraint firstItem="m00-Fk-SUI" firstAttribute="leading" secondItem="OhQ-A3-x9z" secondAttribute="leading" constant="17" id="pT3-03-o1l"/>
+                                <constraint firstItem="m00-Fk-SUI" firstAttribute="centerY" secondItem="OhQ-A3-x9z" secondAttribute="centerY" id="vMU-Du-heu"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E9L-MN-7eI">
+                            <rect key="frame" x="0.0" y="50" width="375" height="140"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="E9L-MN-7eI" firstAttribute="leading" secondItem="WRX-dH-5es" secondAttribute="leading" id="8SJ-QV-LbZ"/>
+                        <constraint firstAttribute="trailing" secondItem="OhQ-A3-x9z" secondAttribute="trailing" id="EHr-Ja-Gy9"/>
+                        <constraint firstItem="OhQ-A3-x9z" firstAttribute="leading" secondItem="WRX-dH-5es" secondAttribute="leading" id="LaS-gf-LRq"/>
+                        <constraint firstAttribute="bottom" secondItem="E9L-MN-7eI" secondAttribute="bottom" constant="10" id="aBs-zX-cbU"/>
+                        <constraint firstAttribute="height" constant="200" id="cdg-gh-1hj"/>
+                        <constraint firstItem="OhQ-A3-x9z" firstAttribute="top" secondItem="WRX-dH-5es" secondAttribute="top" id="enJ-v2-8rc"/>
+                        <constraint firstAttribute="trailing" secondItem="E9L-MN-7eI" secondAttribute="trailing" id="hvr-NQ-yhe"/>
+                        <constraint firstItem="E9L-MN-7eI" firstAttribute="top" secondItem="OhQ-A3-x9z" secondAttribute="bottom" constant="10" id="yNU-KT-0du"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WRX-dH-5es" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GzN-1l-7Xq"/>
+                <constraint firstAttribute="bottom" secondItem="WRX-dH-5es" secondAttribute="bottom" id="QiT-Cy-xqT"/>
+                <constraint firstItem="WRX-dH-5es" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fzI-tF-POb"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-206" y="9"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_button_delete" width="32" height="32"/>
+    </resources>
+</document>
