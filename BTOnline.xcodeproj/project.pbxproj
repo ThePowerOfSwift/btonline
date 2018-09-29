@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C392FC5AF0C61509011C30D /* Pods_MyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8000CCB9AE328B83764288 /* Pods_MyApp.framework */; };
+		694A5AA3928C56FF7979C092 /* Pods_BTOnline_BTOnlineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A4EDB3D4CEAD755CAB9958 /* Pods_BTOnline_BTOnlineTests.framework */; };
+		76C60AF8B9E48D3230218FA2 /* Pods_BTOnline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6157BCFE18E6143D3CB043 /* Pods_BTOnline.framework */; };
 		AC369C912113F2C300FD5A02 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC369C8A2113F2C300FD5A02 /* PopUpViewController.xib */; };
 		AC369C922113F2C300FD5A02 /* PopUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC369C8C2113F2C300FD5A02 /* PopUpTableViewCell.swift */; };
 		AC369C932113F2C300FD5A02 /* PopUpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC369C8D2113F2C300FD5A02 /* PopUpTableViewCell.xib */; };
@@ -90,9 +91,12 @@
 		0B1CAE12BFD16ACB405EADB3 /* Pods-MyApp-MyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-MyAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp-MyAppTests/Pods-MyApp-MyAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		2471FFF2396065422C1E00E8 /* Pods-MyApp.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.staging.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp/Pods-MyApp.staging.xcconfig"; sourceTree = "<group>"; };
 		3934B2D542E2F17D926ED64E /* Pods-MyApp-MyAppTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-MyAppTests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp-MyAppTests/Pods-MyApp-MyAppTests.staging.xcconfig"; sourceTree = "<group>"; };
+		42644AAA9228B04CC7D4EB2C /* Pods-BTOnline-BTOnlineTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOnline-BTOnlineTests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-BTOnline-BTOnlineTests/Pods-BTOnline-BTOnlineTests.staging.xcconfig"; sourceTree = "<group>"; };
 		47FCF93A9948D710C06CECAF /* Pods-MyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp/Pods-MyApp.release.xcconfig"; sourceTree = "<group>"; };
 		48F8D478234569385F88AC15 /* Pods-MyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp/Pods-MyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		79A4EDB3D4CEAD755CAB9958 /* Pods_BTOnline_BTOnlineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTOnline_BTOnlineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8000CCB9AE328B83764288 /* Pods_MyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86BA93F692DED235A19D53AD /* Pods-BTOnline-BTOnlineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOnline-BTOnlineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTOnline-BTOnlineTests/Pods-BTOnline-BTOnlineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC369C8A2113F2C300FD5A02 /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
 		AC369C8C2113F2C300FD5A02 /* PopUpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpTableViewCell.swift; sourceTree = "<group>"; };
 		AC369C8D2113F2C300FD5A02 /* PopUpTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpTableViewCell.xib; sourceTree = "<group>"; };
@@ -116,10 +120,14 @@
 		B03E5A082112DE750027188E /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		B03E5A0A2112DEBA0027188E /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B050EB732114358700E16758 /* API.Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Feed.swift; sourceTree = "<group>"; };
+		B2CE5B92AE45202BF1551119 /* Pods-BTOnline.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOnline.staging.xcconfig"; path = "Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline.staging.xcconfig"; sourceTree = "<group>"; };
+		CAE375C3BB371FB32C5ECD9C /* Pods-BTOnline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOnline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline.debug.xcconfig"; sourceTree = "<group>"; };
+		CD6157BCFE18E6143D3CB043 /* Pods_BTOnline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTOnline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3437E08215F8C1900CE88BE /* CinemaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaViewController.swift; sourceTree = "<group>"; };
 		E3437E09215F8C1900CE88BE /* CinemaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CinemaViewController.xib; sourceTree = "<group>"; };
 		E3437E0D215F8CD300CE88BE /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
 		E3437E0E215F8CD300CE88BE /* FilmsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmsViewController.xib; sourceTree = "<group>"; };
+		E89867748A05C95F14D10F11 /* Pods-BTOnline-BTOnlineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOnline-BTOnlineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTOnline-BTOnlineTests/Pods-BTOnline-BTOnlineTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC0105401E8F8ADF00CE013D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC0105421E8F8ADF00CE013D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC0105441E8F8ADF00CE013D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,8 +145,8 @@
 		ECC3B1CA1EC1B196001345C6 /* DictionayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionayTests.swift; sourceTree = "<group>"; };
 		ECC5B2CA1EF90495001A97BC /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		ECC5B2CC1EF906CA001A97BC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		ECCCCB181E7A40D00073D923 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECCCCB2C1E7A40D10073D923 /* MyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCCCB181E7A40D00073D923 /* BTOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCCCB2C1E7A40D10073D923 /* BTOnlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTOnlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD1C29A1EA725B1000EC989 /* InputViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewExt.swift; sourceTree = "<group>"; };
 		ECEC0C571ED44C5D00F6760A /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		ECEC0C591ED44D4100F6760A /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
@@ -148,6 +156,7 @@
 		ECF23AB81E9B89B2008C23C1 /* ResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerializer.swift; sourceTree = "<group>"; };
 		ECF23ABD1E9B8A6A008C23C1 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		ECF23AC21E9B9264008C23C1 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		F07A209F0FD08F6DD436ACA6 /* Pods-BTOnline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOnline.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline.release.xcconfig"; sourceTree = "<group>"; };
 		F1C6352B1EF141F300D0A1A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F49F1AB05FCB88523C52A0ED /* Pods_MyApp_MyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyApp_MyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA33ABB555FDDC9158D68749 /* Pods-MyApp-MyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-MyAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp-MyAppTests/Pods-MyApp-MyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -158,7 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C392FC5AF0C61509011C30D /* Pods_MyApp.framework in Frameworks */,
+				76C60AF8B9E48D3230218FA2 /* Pods_BTOnline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D028ADD12AA8716ECB14FFD9 /* Pods_MyApp_MyAppTests.framework in Frameworks */,
+				694A5AA3928C56FF7979C092 /* Pods_BTOnline_BTOnlineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +192,12 @@
 				FA33ABB555FDDC9158D68749 /* Pods-MyApp-MyAppTests.debug.xcconfig */,
 				0B1CAE12BFD16ACB405EADB3 /* Pods-MyApp-MyAppTests.release.xcconfig */,
 				3934B2D542E2F17D926ED64E /* Pods-MyApp-MyAppTests.staging.xcconfig */,
+				CAE375C3BB371FB32C5ECD9C /* Pods-BTOnline.debug.xcconfig */,
+				F07A209F0FD08F6DD436ACA6 /* Pods-BTOnline.release.xcconfig */,
+				B2CE5B92AE45202BF1551119 /* Pods-BTOnline.staging.xcconfig */,
+				86BA93F692DED235A19D53AD /* Pods-BTOnline-BTOnlineTests.debug.xcconfig */,
+				E89867748A05C95F14D10F11 /* Pods-BTOnline-BTOnlineTests.release.xcconfig */,
+				42644AAA9228B04CC7D4EB2C /* Pods-BTOnline-BTOnlineTests.staging.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -271,11 +287,13 @@
 			children = (
 				7E8000CCB9AE328B83764288 /* Pods_MyApp.framework */,
 				F49F1AB05FCB88523C52A0ED /* Pods_MyApp_MyAppTests.framework */,
+				CD6157BCFE18E6143D3CB043 /* Pods_BTOnline.framework */,
+				79A4EDB3D4CEAD755CAB9958 /* Pods_BTOnline_BTOnlineTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EC0105381E8F8ADF00CE013D /* MyApp */ = {
+		EC0105381E8F8ADF00CE013D /* BTOnline */ = {
 			isa = PBXGroup;
 			children = (
 				EC0105441E8F8ADF00CE013D /* AppDelegate.swift */,
@@ -286,7 +304,7 @@
 				EC0105411E8F8ADF00CE013D /* Supports */,
 				EC0105431E8F8ADF00CE013D /* View */,
 			);
-			path = MyApp;
+			path = BTOnline;
 			sourceTree = "<group>";
 		};
 		EC01053D1E8F8ADF00CE013D /* Define */ = {
@@ -328,7 +346,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		EC01055B1E8F8AF000CE013D /* MyAppTests */ = {
+		EC01055B1E8F8AF000CE013D /* BTOnlineTests */ = {
 			isa = PBXGroup;
 			children = (
 				EC01055C1E8F8AF000CE013D /* Info.plist */,
@@ -337,7 +355,7 @@
 				ECC3B1B51EC1701A001345C6 /* View */,
 				ECC3B1BB1EC17025001345C6 /* ViewModel */,
 			);
-			path = MyAppTests;
+			path = BTOnlineTests;
 			sourceTree = "<group>";
 		};
 		EC5337BF1EF7933A00ACE038 /* Base */ = {
@@ -388,8 +406,8 @@
 		ECCCCB0F1E7A40D00073D923 = {
 			isa = PBXGroup;
 			children = (
-				EC0105381E8F8ADF00CE013D /* MyApp */,
-				EC01055B1E8F8AF000CE013D /* MyAppTests */,
+				EC0105381E8F8ADF00CE013D /* BTOnline */,
+				EC01055B1E8F8AF000CE013D /* BTOnlineTests */,
 				ECCCCB191E7A40D00073D923 /* Products */,
 				60B550C083ADD72F4D2D53AA /* Pods */,
 				E7A23BB3FDC7E19F0663DF69 /* Frameworks */,
@@ -399,8 +417,8 @@
 		ECCCCB191E7A40D00073D923 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ECCCCB181E7A40D00073D923 /* MyApp.app */,
-				ECCCCB2C1E7A40D10073D923 /* MyAppTests.xctest */,
+				ECCCCB181E7A40D00073D923 /* BTOnline.app */,
+				ECCCCB2C1E7A40D10073D923 /* BTOnlineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -478,9 +496,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ECCCCB171E7A40D00073D923 /* MyApp */ = {
+		ECCCCB171E7A40D00073D923 /* BTOnline */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECCCCB351E7A40D10073D923 /* Build configuration list for PBXNativeTarget "MyApp" */;
+			buildConfigurationList = ECCCCB351E7A40D10073D923 /* Build configuration list for PBXNativeTarget "BTOnline" */;
 			buildPhases = (
 				B0E09827A261C794A6F031AA /* [CP] Check Pods Manifest.lock */,
 				EC8C6FF51ECAF27D00C52F7A /* SwiftLint */,
@@ -494,14 +512,14 @@
 			);
 			dependencies = (
 			);
-			name = MyApp;
+			name = BTOnline;
 			productName = MVVM;
-			productReference = ECCCCB181E7A40D00073D923 /* MyApp.app */;
+			productReference = ECCCCB181E7A40D00073D923 /* BTOnline.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ECCCCB2B1E7A40D10073D923 /* MyAppTests */ = {
+		ECCCCB2B1E7A40D10073D923 /* BTOnlineTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECCCCB381E7A40D10073D923 /* Build configuration list for PBXNativeTarget "MyAppTests" */;
+			buildConfigurationList = ECCCCB381E7A40D10073D923 /* Build configuration list for PBXNativeTarget "BTOnlineTests" */;
 			buildPhases = (
 				BB48CAD8894F6F7352250348 /* [CP] Check Pods Manifest.lock */,
 				ECCCCB281E7A40D10073D923 /* Sources */,
@@ -514,9 +532,9 @@
 			dependencies = (
 				ECCCCB2E1E7A40D10073D923 /* PBXTargetDependency */,
 			);
-			name = MyAppTests;
+			name = BTOnlineTests;
 			productName = MVVMTests;
-			productReference = ECCCCB2C1E7A40D10073D923 /* MyAppTests.xctest */;
+			productReference = ECCCCB2C1E7A40D10073D923 /* BTOnlineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -540,7 +558,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ECCCCB131E7A40D00073D923 /* Build configuration list for PBXProject "MyApp" */;
+			buildConfigurationList = ECCCCB131E7A40D00073D923 /* Build configuration list for PBXProject "BTOnline" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -553,8 +571,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ECCCCB171E7A40D00073D923 /* MyApp */,
-				ECCCCB2B1E7A40D10073D923 /* MyAppTests */,
+				ECCCCB171E7A40D00073D923 /* BTOnline */,
+				ECCCCB2B1E7A40D10073D923 /* BTOnlineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -598,7 +616,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MyApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BTOnline-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -616,7 +634,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MyApp-MyAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BTOnline-BTOnlineTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -629,7 +647,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MyApp-MyAppTests/Pods-MyApp-MyAppTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-BTOnline-BTOnlineTests/Pods-BTOnline-BTOnlineTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -652,7 +670,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyApp-MyAppTests/Pods-MyApp-MyAppTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTOnline-BTOnlineTests/Pods-BTOnline-BTOnlineTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E23D44304C718C6164C90A36 /* [CP] Embed Pods Frameworks */ = {
@@ -661,7 +679,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -684,7 +702,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EC8C6FF51ECAF27D00C52F7A /* SwiftLint */ = {
@@ -765,7 +783,7 @@
 /* Begin PBXTargetDependency section */
 		ECCCCB2E1E7A40D10073D923 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ECCCCB171E7A40D00073D923 /* MyApp */;
+			target = ECCCCB171E7A40D00073D923 /* BTOnline */;
 			targetProxy = ECCCCB2D1E7A40D10073D923 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -892,11 +910,11 @@
 		};
 		ECCCCB361E7A40D10073D923 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48F8D478234569385F88AC15 /* Pods-MyApp.debug.xcconfig */;
+			baseConfigurationReference = CAE375C3BB371FB32C5ECD9C /* Pods-BTOnline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/MyApp/Supports/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/BTOnline/Supports/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.quangnk.dev.mvvm.btonline;
@@ -907,11 +925,11 @@
 		};
 		ECCCCB371E7A40D10073D923 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47FCF93A9948D710C06CECAF /* Pods-MyApp.release.xcconfig */;
+			baseConfigurationReference = F07A209F0FD08F6DD436ACA6 /* Pods-BTOnline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/MyApp/Supports/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/BTOnline/Supports/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.quangnk.dev.mvvm.btonline;
@@ -922,7 +940,7 @@
 		};
 		ECCCCB391E7A40D10073D923 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA33ABB555FDDC9158D68749 /* Pods-MyApp-MyAppTests.debug.xcconfig */;
+			baseConfigurationReference = 86BA93F692DED235A19D53AD /* Pods-BTOnline-BTOnlineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "${inherited}";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -931,13 +949,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vn.asiantech.dev.mvvm.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyApp.app/MyApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTOnline.app/BTOnline";
 			};
 			name = Debug;
 		};
 		ECCCCB3A1E7A40D10073D923 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B1CAE12BFD16ACB405EADB3 /* Pods-MyApp-MyAppTests.release.xcconfig */;
+			baseConfigurationReference = E89867748A05C95F14D10F11 /* Pods-BTOnline-BTOnlineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "${inherited}";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -946,7 +964,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vn.asiantech.dev.mvvm.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyApp.app/MyApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTOnline.app/BTOnline";
 			};
 			name = Release;
 		};
@@ -1004,11 +1022,11 @@
 		};
 		ECE876861EA9B979005DD06D /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2471FFF2396065422C1E00E8 /* Pods-MyApp.staging.xcconfig */;
+			baseConfigurationReference = B2CE5B92AE45202BF1551119 /* Pods-BTOnline.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/MyApp/Supports/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/BTOnline/Supports/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.quangnk.dev.mvvm.btonline;
@@ -1019,7 +1037,7 @@
 		};
 		ECE876871EA9B979005DD06D /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3934B2D542E2F17D926ED64E /* Pods-MyApp-MyAppTests.staging.xcconfig */;
+			baseConfigurationReference = 42644AAA9228B04CC7D4EB2C /* Pods-BTOnline-BTOnlineTests.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "${inherited}";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1028,14 +1046,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vn.asiantech.dev.mvvm.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyApp.app/MyApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTOnline.app/BTOnline";
 			};
 			name = Staging;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ECCCCB131E7A40D00073D923 /* Build configuration list for PBXProject "MyApp" */ = {
+		ECCCCB131E7A40D00073D923 /* Build configuration list for PBXProject "BTOnline" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECCCCB331E7A40D10073D923 /* Debug */,
@@ -1045,7 +1063,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECCCCB351E7A40D10073D923 /* Build configuration list for PBXNativeTarget "MyApp" */ = {
+		ECCCCB351E7A40D10073D923 /* Build configuration list for PBXNativeTarget "BTOnline" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECCCCB361E7A40D10073D923 /* Debug */,
@@ -1055,7 +1073,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECCCCB381E7A40D10073D923 /* Build configuration list for PBXNativeTarget "MyAppTests" */ = {
+		ECCCCB381E7A40D10073D923 /* Build configuration list for PBXNativeTarget "BTOnlineTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECCCCB391E7A40D10073D923 /* Debug */,
