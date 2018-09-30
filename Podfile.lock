@@ -9,6 +9,7 @@ PODS:
   - MVVM-Swift (1.1.0)
   - OAuthSwift (1.2.2)
   - ObjectMapper (3.1.0)
+  - Parchment (1.4.1)
   - SwiftLint (0.25.0)
   - SwiftUtils (4.0.1)
   - TransitionButton (0.5.1)
@@ -22,6 +23,7 @@ DEPENDENCIES:
   - MVVM-Swift (= 1.1.0)
   - OAuthSwift (from `https://github.com/HaidctDN/OAuthSwift`)
   - ObjectMapper (= 3.1.0)
+  - Parchment
   - SwiftLint (= 0.25.0)
   - SwiftUtils (= 4.0.1)
   - TransitionButton
@@ -35,6 +37,7 @@ SPEC REPOS:
     - Kingfisher
     - MVVM-Swift
     - ObjectMapper
+    - Parchment
     - SwiftLint
     - SwiftUtils
     - TransitionButton
@@ -57,10 +60,11 @@ SPEC CHECKSUMS:
   MVVM-Swift: 54749cc12bb30af41632f30a2c576a18bf9e4bc8
   OAuthSwift: 6ab6259b5c79c6a07d455d8dfaddad6058b2b5c3
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  Parchment: e6c2a3a0063739382dd207e21d48fe5e81f3324a
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
   SwiftUtils: b009d391fb2e285392f114238f8b55d2750b80f0
   TransitionButton: 20f92b3cc726b047e4df200fdab5307f33395a81
 
-PODFILE CHECKSUM: fd774c675251f24ca2c52ba57d8d37b0d5feb8be
+PODFILE CHECKSUM: ce6ee8b1d7916ac6199f1f9e564f2fa2c430ccd8
 
 COCOAPODS: 1.5.3
