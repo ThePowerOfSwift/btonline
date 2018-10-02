@@ -7,7 +7,6 @@
 //
 
 import MVVM
-import OAuthSwift
 
 final class LoginViewModel: ViewModel {
 

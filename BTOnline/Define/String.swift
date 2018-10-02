@@ -26,7 +26,9 @@ extension App {
         static let popUpDownload = "Download"
         static let popUpCopy = "Copy"
 
-        //Home
-        static let titleHome = "Home"
+        //Film
+        static let titleNowShowing = "Now Showing"
+        static let titleComingSoon = "Coming Soon"
+        static let titleToday = "Today"
     }
 }

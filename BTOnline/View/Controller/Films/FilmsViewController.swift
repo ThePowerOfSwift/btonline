@@ -14,10 +14,6 @@ class FilmsViewController: BaseViewController {
     // MARK: - Properties
     let viewControllers = [NowShowingViewController(), TodayViewController(), ComingSoonViewController()]
 
-    override func setupData() {
-
-    }
-
     override func setupUI() {
         navigationController?.navigationBar.isHidden = true
         configParchment()

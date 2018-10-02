@@ -18,6 +18,8 @@ target 'BTOnline' do
     # pod 'LGSideMenuController', '2.1.1' # iOS view controller, shows left and right views by pressing button or gesture.
     pod 'TransitionButton'
     pod 'Parchment'
+    pod 'FAPaginationLayout'
+    pod 'GlidingCollection'
 
     # Data
     pod 'ObjectMapper', '3.1.0' # Simple JSON Object mapping written in Swift. Please fix this version to 2.2.6 now.
@@ -26,12 +28,13 @@ target 'BTOnline' do
     # Network
     pod 'Alamofire', '4.6.0' # Elegant HTTP Networking in Swift.
     pod 'AlamofireNetworkActivityIndicator', '2.2.0' # Controls the visibility of the network activity indicator on iOS using Alamofire.
-    pod 'OAuthSwift', :git => 'https://github.com/HaidctDN/OAuthSwift'
+    #pod 'OAuthSwift', :git => 'https://github.com/HaidctDN/OAuthSwift'
     pod 'Kingfisher'
 
     # Utils
     pod 'SwiftLint', '0.25.0' # A tool to enforce Swift style and conventions.
     pod 'SwiftUtils', '4.0.1' # Swift shorthand.
+    pod 'SwifterSwift'
 
     # pod 'AsyncSwift', '2.0.4' # Syntactic sugar in Swift for asynchronous dispatches in Grand Central Dispatch.
     # pod 'SwiftyUserDefaults', '3.0.1' # Modern Swift API for NSUserDefaults.
