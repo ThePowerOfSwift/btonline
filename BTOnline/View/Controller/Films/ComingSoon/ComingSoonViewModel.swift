@@ -17,7 +17,7 @@ final class ComingSoonViewModel: ViewModel {
     // MARK: - Dummy data
     init() {
         for i in 1...10 {
-            films.append(Film(imagePath: "img_test\(i % 2)", name: "Film name \(i)", describe: "Opening Feb 12"))
+            films.append(Film(imagePath: "img_test\(i % 2)", name: "Film name \(i)", describe: "Opening Feb 14"))
         }
     }
 }
