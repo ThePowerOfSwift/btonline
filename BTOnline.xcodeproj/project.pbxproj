@@ -45,6 +45,7 @@
 		B07913CA2163631000E2627C /* ComingSoonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07913C82163631000E2627C /* ComingSoonCell.swift */; };
 		B07913CB2163631000E2627C /* ComingSoonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07913C92163631000E2627C /* ComingSoonCell.xib */; };
 		B07913CD2163632D00E2627C /* ComingSoonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07913CC2163632D00E2627C /* ComingSoonCellViewModel.swift */; };
+		B07DB1072164B9D600ECE9A9 /* CinemaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DB1062164B9D600ECE9A9 /* CinemaViewModel.swift */; };
 		D028ADD12AA8716ECB14FFD9 /* Pods_MyApp_MyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49F1AB05FCB88523C52A0ED /* Pods_MyApp_MyAppTests.framework */; };
 		E3437E0A215F8C1900CE88BE /* CinemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3437E08215F8C1900CE88BE /* CinemaViewController.swift */; };
 		E3437E0B215F8C1900CE88BE /* CinemaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3437E09215F8C1900CE88BE /* CinemaViewController.xib */; };
@@ -153,6 +154,7 @@
 		B07913C82163631000E2627C /* ComingSoonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonCell.swift; sourceTree = "<group>"; };
 		B07913C92163631000E2627C /* ComingSoonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComingSoonCell.xib; sourceTree = "<group>"; };
 		B07913CC2163632D00E2627C /* ComingSoonCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonCellViewModel.swift; sourceTree = "<group>"; };
+		B07DB1062164B9D600ECE9A9 /* CinemaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaViewModel.swift; sourceTree = "<group>"; };
 		B2CE5B92AE45202BF1551119 /* Pods-BTOnline.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOnline.staging.xcconfig"; path = "Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline.staging.xcconfig"; sourceTree = "<group>"; };
 		CAE375C3BB371FB32C5ECD9C /* Pods-BTOnline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOnline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline.debug.xcconfig"; sourceTree = "<group>"; };
 		CD6157BCFE18E6143D3CB043 /* Pods_BTOnline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTOnline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,6 +341,7 @@
 			children = (
 				E3437E08215F8C1900CE88BE /* CinemaViewController.swift */,
 				E3437E09215F8C1900CE88BE /* CinemaViewController.xib */,
+				B07DB1062164B9D600ECE9A9 /* CinemaViewModel.swift */,
 			);
 			path = Cinema;
 			sourceTree = "<group>";
@@ -764,6 +767,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BTOnline-BTOnlineTests/Pods-BTOnline-BTOnlineTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/ElongationPreview/ElongationPreview.framework",
 				"${BUILT_PRODUCTS_DIR}/FAPaginationLayout/FAPaginationLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/GlidingCollection/GlidingCollection.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -778,6 +782,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ElongationPreview.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FAPaginationLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GlidingCollection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -802,6 +807,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/ElongationPreview/ElongationPreview.framework",
 				"${BUILT_PRODUCTS_DIR}/FAPaginationLayout/FAPaginationLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/GlidingCollection/GlidingCollection.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -816,6 +822,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ElongationPreview.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FAPaginationLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GlidingCollection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -901,6 +908,7 @@
 				ECF23ABE1E9B8A6A008C23C1 /* Error.swift in Sources */,
 				E3437E282161294F00CE88BE /* ComingSoonViewController.swift in Sources */,
 				ACB045A3210F0CEB00159503 /* BaseNavigationController.swift in Sources */,
+				B07DB1072164B9D600ECE9A9 /* CinemaViewModel.swift in Sources */,
 				EC5337B51EF7845700ACE038 /* Color.swift in Sources */,
 				B03E5A0E2112DEBB0027188E /* LoginViewModel.swift in Sources */,
 				AC369C952113F2C300FD5A02 /* PopUpViewModel.swift in Sources */,
