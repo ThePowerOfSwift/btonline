@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import Parchment
 
 class FilmsViewController: BaseViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title =  "Films"
+    // MARK: - Properties
+    let viewControllers = [NowShowingViewController(), TodayViewController(), ComingSoonViewController()]
+
+    override func setupUI() {
+        navigationController?.navigationBar.isHidden = true
+        configParchment()
     }
 
+    private func configParchment() {
+        let pagingViewController = FixedPagingViewController(viewControllers: viewControllers)
+        addChildViewController(pagingViewController)
+        view.addSubview(pagingViewController.view)
+        view.constrainToEdges(pagingViewController.view)
+        pagingViewController.didMove(toParentViewController: self)
+    }
 }

@@ -8,7 +8,6 @@
 
 import UIKit
 import AlamofireNetworkActivityIndicator
-import OAuthSwift
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -94,10 +93,10 @@ extension AppDelegate {
         NetworkActivityIndicatorManager.shared.startDelay = 0
     }
 
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) -> Bool {
-        if url.host == "oauth-callback" {
-            OAuthSwift.handle(url: url)
-        }
-        return true
-    }
+//    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) -> Bool {
+//        if url.host == "oauth-callback" {
+//            OAuthSwift.handle(url: url)
+//        }
+//        return true
+//    }
 }
