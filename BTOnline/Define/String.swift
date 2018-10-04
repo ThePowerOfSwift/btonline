@@ -30,5 +30,8 @@ extension App {
         static let titleNowShowing = "Now Showing"
         static let titleComingSoon = "Coming Soon"
         static let titleToday = "Today"
+
+        //Cinema
+        static let titleCinema = "Cinema"
     }
 }

@@ -10,9 +10,54 @@ import UIKit
 
 final class CinemaViewController: BaseViewController {
 
+    // MARK: - Outlet
+    @IBOutlet weak var tableView: UITableView!
+
+    // MARK: - Properties
+    var viewModel = CinemaViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Cinema"
+        title = App.String.titleCinema
+        configTableView()
     }
 
+    private func configTableView() {
+        tableView.register(CinemaCell.self)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = Config.estimatedRowHeight
+    }
+}
+
+// MARK: - UITableViewDataSource
+extension CinemaViewController: UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numberOfItems(inSection: section)
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeue(CinemaCell.self)
+        cell.viewModel = viewModel.viewModelForItem(at: indexPath)
+        return cell
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension CinemaViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = DetailCinemaViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+// MARK: - Config
+extension CinemaViewController {
+
+    struct Config {
+        static let estimatedRowHeight: CGFloat = 50
+    }
 }
