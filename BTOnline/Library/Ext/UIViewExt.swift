@@ -21,7 +21,7 @@ extension UIView {
             toItem: self,
             attribute: .top,
             multiplier: 1.0,
-            constant: 30)
+            constant: 27)
 
         let bottomConstraint = NSLayoutConstraint(
             item: subview,
