@@ -4,7 +4,6 @@ PODS:
     - Alamofire (~> 4.5)
   - Crashlytics (3.10.7):
     - Fabric (~> 1.7.11)
-  - ElongationPreview (1.1.2)
   - Fabric (1.7.11)
   - FAPaginationLayout (1.0.0)
   - GlidingCollection (1.1.0)
@@ -37,7 +36,6 @@ DEPENDENCIES:
   - Alamofire (= 4.6.0)
   - AlamofireNetworkActivityIndicator (= 2.2.0)
   - Crashlytics
-  - ElongationPreview
   - Fabric
   - FAPaginationLayout
   - GlidingCollection
@@ -55,7 +53,6 @@ SPEC REPOS:
     - Alamofire
     - AlamofireNetworkActivityIndicator
     - Crashlytics
-    - ElongationPreview
     - Fabric
     - FAPaginationLayout
     - GlidingCollection
@@ -72,7 +69,6 @@ SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   AlamofireNetworkActivityIndicator: 81e1630e7cfed22a4e4e82a174c59e651dc4f8ca
   Crashlytics: ccaac42660eb9351b9960c0d66106b0bcf99f4fa
-  ElongationPreview: a1b53f61d2086c0ce5c2061e5233bff25b93917d
   Fabric: f233c9492b3bbc1f04e3882986740f7988a58edb
   FAPaginationLayout: 0342b92aa20c86f0a5dfb41a573841ccea7fa5e2
   GlidingCollection: 2194165075fa7230027049238c9ed724453557e6
@@ -85,6 +81,6 @@ SPEC CHECKSUMS:
   SwiftUtils: b009d391fb2e285392f114238f8b55d2750b80f0
   TransitionButton: 20f92b3cc726b047e4df200fdab5307f33395a81
 
-PODFILE CHECKSUM: 81bc2c3100c10d3b245ae1e6044b6ce7ee385f8d
+PODFILE CHECKSUM: ccd11382e7c5d24080efbc45165ca903f110b7f1
 
 COCOAPODS: 1.5.3

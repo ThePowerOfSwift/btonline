@@ -56,7 +56,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
             //Cinema
             let cinemaVC = CinemaViewController()
-            let cinemaTabBarItem = UITabBarItem(title: "Cinema", image: #imageLiteral(resourceName: "ic_tabbar_follower"), selectedImage: #imageLiteral(resourceName: "ic_tabbar_follower"))
+            let cinemaTabBarItem = UITabBarItem(title: "Cinemas", image: #imageLiteral(resourceName: "ic_tabbar_follower"), selectedImage: #imageLiteral(resourceName: "ic_tabbar_follower"))
             cinemaVC.tabBarItem = cinemaTabBarItem
             let followNC = BaseNavigationController(rootViewController: cinemaVC)
 

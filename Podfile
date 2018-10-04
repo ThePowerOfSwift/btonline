@@ -20,7 +20,6 @@ target 'BTOnline' do
     pod 'Parchment'
     pod 'FAPaginationLayout'
     pod 'GlidingCollection'
-    pod 'ElongationPreview'
 
     # Data
     pod 'ObjectMapper', '3.1.0' # Simple JSON Object mapping written in Swift. Please fix this version to 2.2.6 now.
