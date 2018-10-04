@@ -37,7 +37,7 @@ final class NowShowingViewController: BaseViewController {
     }
 }
 
-// MARK: -
+// MARK: - UITableViewDataSource
 extension NowShowingViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

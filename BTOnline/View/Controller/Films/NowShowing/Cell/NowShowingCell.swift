@@ -2,7 +2,7 @@
 //  NowShowingCell.swift
 //  BTOnline
 //
-//  Created by Kieu Nhi on 10/4/18.
+//  Created by Quang Nguyen K. on 10/4/18.
 //  Copyright © 2018 Asian Tech Co., Ltd. All rights reserved.
 //
 

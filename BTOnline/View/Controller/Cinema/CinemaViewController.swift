@@ -18,7 +18,6 @@ final class CinemaViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = App.String.titleCinema
         configTableView()
     }
 

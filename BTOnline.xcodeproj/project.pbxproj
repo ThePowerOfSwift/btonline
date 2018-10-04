@@ -52,6 +52,7 @@
 		B07DB1072164B9D600ECE9A9 /* CinemaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DB1062164B9D600ECE9A9 /* CinemaViewModel.swift */; };
 		CDECD574216651AA00211895 /* NowShowingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDECD572216651AA00211895 /* NowShowingCell.swift */; };
 		CDECD575216651AA00211895 /* NowShowingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDECD573216651AA00211895 /* NowShowingCell.xib */; };
+		CDECD577216685D100211895 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDECD576216685D100211895 /* SearchViewModel.swift */; };
 		D028ADD12AA8716ECB14FFD9 /* Pods_MyApp_MyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49F1AB05FCB88523C52A0ED /* Pods_MyApp_MyAppTests.framework */; };
 		E3437E0A215F8C1900CE88BE /* CinemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3437E08215F8C1900CE88BE /* CinemaViewController.swift */; };
 		E3437E0B215F8C1900CE88BE /* CinemaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3437E09215F8C1900CE88BE /* CinemaViewController.xib */; };
@@ -170,6 +171,7 @@
 		CD6157BCFE18E6143D3CB043 /* Pods_BTOnline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTOnline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDECD572216651AA00211895 /* NowShowingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowShowingCell.swift; sourceTree = "<group>"; };
 		CDECD573216651AA00211895 /* NowShowingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NowShowingCell.xib; sourceTree = "<group>"; };
+		CDECD576216685D100211895 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewModel.swift; path = ../../../../../SearchViewModel.swift; sourceTree = "<group>"; };
 		E3437E08215F8C1900CE88BE /* CinemaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaViewController.swift; sourceTree = "<group>"; };
 		E3437E09215F8C1900CE88BE /* CinemaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CinemaViewController.xib; sourceTree = "<group>"; };
 		E3437E0D215F8CD300CE88BE /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 			children = (
 				ACB0459A210F061C00159503 /* SearchViewController.swift */,
 				ACB0459B210F061C00159503 /* SearchViewController.xib */,
+				CDECD576216685D100211895 /* SearchViewModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -941,6 +944,7 @@
 				B07913CD2163632D00E2627C /* ComingSoonCellViewModel.swift in Sources */,
 				CDECD574216651AA00211895 /* NowShowingCell.swift in Sources */,
 				ACB045A0210F063A00159503 /* ProfileViewController.swift in Sources */,
+				CDECD577216685D100211895 /* SearchViewModel.swift in Sources */,
 				E3437E0F215F8CD300CE88BE /* FilmsViewController.swift in Sources */,
 				B07913CA2163631000E2627C /* ComingSoonCell.swift in Sources */,
 				ECC5B2CD1EF906CA001A97BC /* BaseViewController.swift in Sources */,
