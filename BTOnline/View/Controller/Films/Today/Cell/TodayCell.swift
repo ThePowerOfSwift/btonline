@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TodayCell: CollectionCell {
+final class TodayCell: CollectionCell {
 
     // MARK: - Outlet
     @IBOutlet private weak var filmImageView: UIImageView!

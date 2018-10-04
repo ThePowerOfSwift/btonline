@@ -4,6 +4,354 @@
    <FileRef
       location = "group:BTOnline.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:BTOnline"
+      name = "BTOnline">
+      <FileRef
+         location = "group:BTOnline/AppDelegate.swift">
+      </FileRef>
+      <Group
+         location = "group:BTOnline/Define"
+         name = "Define">
+         <FileRef
+            location = "group:BTOnline/Define/Key.swift">
+         </FileRef>
+         <FileRef
+            location = "group:BTOnline/Define/App.swift">
+         </FileRef>
+         <FileRef
+            location = "group:BTOnline/Define/String.swift">
+         </FileRef>
+         <FileRef
+            location = "group:BTOnline/Define/Color.swift">
+         </FileRef>
+         <FileRef
+            location = "group:BTOnline/Define/Font.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:BTOnline/Library"
+         name = "Library">
+         <Group
+            location = "group:BTOnline/Library/Ext"
+            name = "Ext">
+            <FileRef
+               location = "group:BTOnline/Library/Ext/InputViewExt.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/Library/Ext/MapperExt.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/Library/Ext/StringExt.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/Library/Ext/UIViewControllerExt.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/Library/Ext/UIWebViewExt.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/Library/Ext/URLExt.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/Library/Ext/UIImageViewExt.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/Library/Ext/UIViewExt.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:BTOnline/Model"
+         name = "Model">
+         <Group
+            location = "group:BTOnline/Model/API"
+            name = "API">
+            <Group
+               location = "group:BTOnline/Model/API/Core"
+               name = "Core">
+               <FileRef
+                  location = "group:BTOnline/Model/API/Core/Api.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/Model/API/Core/ApiManager.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/Model/API/Core/Error.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/Model/API/Core/RequestSerializer.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/Model/API/Core/ResponseSerializer.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/Model/API/Core/Session.swift">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:BTOnline/Model/API/API.Feed.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:BTOnline/Model/Schema"
+            name = "Schema">
+            <FileRef
+               location = "group:BTOnline/Model/Schema/PopUpItem.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/Model/Schema/Feed.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/Model/Schema/Film.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/Model/Schema/Cinema.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:BTOnline/Resources"
+         name = "Resources">
+         <FileRef
+            location = "group:BTOnline/Resources/Assets.xcassets">
+         </FileRef>
+         <Group
+            location = "group:BTOnline/Resources"
+            name = "Localizable.strings">
+            <FileRef
+               location = "group:BTOnline/Resources/Base.lproj/Localizable.strings">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:BTOnline/Supports"
+         name = "Supports">
+         <FileRef
+            location = "group:BTOnline/Supports/Info.plist">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:BTOnline/View"
+         name = "View">
+         <Group
+            location = "group:BTOnline/View/Base"
+            name = "Base">
+            <FileRef
+               location = "group:BTOnline/View/Base/TableCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/View/Base/CollectionCell.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/View/Base/Button.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/View/Base/BaseViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/View/Base/BaseTabBarController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BTOnline/View/Base/BaseNavigationController.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:BTOnline/View/Controller"
+            name = "Controller">
+            <Group
+               location = "group:BTOnline/View/Controller/DetailCinema"
+               name = "DetailCinema">
+               <FileRef
+                  location = "group:BTOnline/View/Controller/DetailCinema/DetailCinemaViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/View/Controller/DetailCinema/DetailCinemaViewController.xib">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:BTOnline/View/Controller/Cinema"
+               name = "Cinema">
+               <Group
+                  location = "group:BTOnline/View/Controller/Cinema/Cell"
+                  name = "Cell">
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/Cinema/Cell/CinemaCell.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/Cinema/Cell/CinemaCell.xib">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/Cinema/Cell/CinemaCellViewModel.swift">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:BTOnline/View/Controller/Cinema/CinemaViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/View/Controller/Cinema/CinemaViewController.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/View/Controller/Cinema/CinemaViewModel.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:BTOnline/View/Controller/Films"
+               name = "Films">
+               <FileRef
+                  location = "group:BTOnline/View/Controller/Films/FilmsViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/View/Controller/Films/FilmsViewController.xib">
+               </FileRef>
+               <Group
+                  location = "group:BTOnline/View/Controller/Films/ComingSoon"
+                  name = "ComingSoon">
+                  <Group
+                     location = "group:BTOnline/View/Controller/Films/ComingSoon/Cell"
+                     name = "Cell">
+                     <FileRef
+                        location = "group:BTOnline/View/Controller/Films/ComingSoon/Cell/ComingSoonCell.swift">
+                     </FileRef>
+                     <FileRef
+                        location = "group:BTOnline/View/Controller/Films/ComingSoon/Cell/ComingSoonCell.xib">
+                     </FileRef>
+                     <FileRef
+                        location = "group:BTOnline/View/Controller/Films/ComingSoon/Cell/ComingSoonCellViewModel.swift">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/Films/ComingSoon/ComingSoonViewController.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/Films/ComingSoon/ComingSoonViewController.xib">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/Films/ComingSoon/ComingSoonViewModel.swift">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:BTOnline/View/Controller/Films/NowShowing"
+                  name = "NowShowing">
+                  <Group
+                     location = "group:BTOnline/View/Controller/Films/NowShowing/Cell"
+                     name = "Cell">
+                     <FileRef
+                        location = "group:BTOnline/View/Controller/Films/NowShowing/Cell/NowShowingCell.swift">
+                     </FileRef>
+                     <FileRef
+                        location = "group:BTOnline/View/Controller/Films/NowShowing/Cell/NowShowingCell.xib">
+                     </FileRef>
+                     <FileRef
+                        location = "group:BTOnline/View/Controller/Films/NowShowing/Cell/NowShowingCellViewModel.swift">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/Films/NowShowing/NowShowingViewController.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/Films/NowShowing/NowShowingViewController.xib">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/Films/NowShowing/NowShowingViewModel.swift">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:BTOnline/View/Controller/Films/Today"
+                  name = "Today">
+                  <Group
+                     location = "group:BTOnline/View/Controller/Films/Today/Cell"
+                     name = "Cell">
+                     <FileRef
+                        location = "group:BTOnline/View/Controller/Films/Today/Cell/TodayCell.swift">
+                     </FileRef>
+                     <FileRef
+                        location = "group:BTOnline/View/Controller/Films/Today/Cell/TodayCell.xib">
+                     </FileRef>
+                     <FileRef
+                        location = "group:BTOnline/View/Controller/Films/Today/Cell/TodayCellViewModel.swift">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/Films/Today/TodayViewController.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/Films/Today/TodayViewController.xib">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/Films/Today/TodayViewModel.swift">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:BTOnline/View/Controller/Login"
+               name = "Login">
+               <FileRef
+                  location = "group:BTOnline/View/Controller/Login/LoginViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/View/Controller/Login/LoginViewController.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/View/Controller/Login/LoginViewModel.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:BTOnline/View/Controller/PopUp"
+               name = "PopUp">
+               <FileRef
+                  location = "group:BTOnline/View/Controller/PopUp/PopUpViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/View/Controller/PopUp/PopUpViewController.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/View/Controller/PopUp/PopUpViewModel.swift">
+               </FileRef>
+               <Group
+                  location = "group:BTOnline/View/Controller/PopUp/PopUpCell"
+                  name = "PopUpCell">
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/PopUp/PopUpCell/PopUpTableViewCell.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/PopUp/PopUpCell/PopUpTableViewCell.xib">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BTOnline/View/Controller/PopUp/PopUpCell/PopUpCellViewModel.swift">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:BTOnline/View/Controller/Profile"
+               name = "Profile">
+               <FileRef
+                  location = "group:BTOnline/View/Controller/Profile/ProfileViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/View/Controller/Profile/ProfileViewController.xib">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:BTOnline/View/Controller/Search"
+               name = "Search">
+               <FileRef
+                  location = "group:BTOnline/View/Controller/Search/SearchViewController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:BTOnline/View/Controller/Search/SearchViewController.xib">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:BTOnline/View/LaunchScreen"
+            name = "LaunchScreen">
+            <FileRef
+               location = "group:BTOnline/View/LaunchScreen/LaunchScreen.storyboard">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>

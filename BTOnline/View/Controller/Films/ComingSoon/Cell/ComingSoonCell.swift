@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ComingSoonCell: CollectionCell {
+final class ComingSoonCell: CollectionCell {
 
     // MARK: - Outlet
     @IBOutlet private weak var filmImageView: UIImageView!

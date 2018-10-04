@@ -9,7 +9,7 @@ PODS:
   - GlidingCollection (1.1.0)
   - Kingfisher (4.8.1)
   - MVVM-Swift (1.1.0)
-  - ObjectMapper (3.1.0)
+  - ObjectMapper (3.3.0)
   - Parchment (1.4.1)
   - SwifterSwift (4.4.0):
     - SwifterSwift/AppKit (= 4.4.0)
@@ -41,29 +41,12 @@ DEPENDENCIES:
   - GlidingCollection
   - Kingfisher
   - MVVM-Swift (= 1.1.0)
-  - ObjectMapper (= 3.1.0)
+  - ObjectMapper (~> 3.3)
   - Parchment
   - SwifterSwift
   - SwiftLint (= 0.25.0)
   - SwiftUtils (= 4.0.1)
   - TransitionButton
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Alamofire
-    - AlamofireNetworkActivityIndicator
-    - Crashlytics
-    - Fabric
-    - FAPaginationLayout
-    - GlidingCollection
-    - Kingfisher
-    - MVVM-Swift
-    - ObjectMapper
-    - Parchment
-    - SwifterSwift
-    - SwiftLint
-    - SwiftUtils
-    - TransitionButton
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
@@ -74,13 +57,13 @@ SPEC CHECKSUMS:
   GlidingCollection: 2194165075fa7230027049238c9ed724453557e6
   Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
   MVVM-Swift: 54749cc12bb30af41632f30a2c576a18bf9e4bc8
-  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   Parchment: e6c2a3a0063739382dd207e21d48fe5e81f3324a
   SwifterSwift: 1ce0e31801ddd3a2bd3256626275425adb01067a
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
   SwiftUtils: b009d391fb2e285392f114238f8b55d2750b80f0
   TransitionButton: 20f92b3cc726b047e4df200fdab5307f33395a81
 
-PODFILE CHECKSUM: ccd11382e7c5d24080efbc45165ca903f110b7f1
+PODFILE CHECKSUM: 203b9b53313b91be217adb2b6c0fe848af7eaf28
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.4.0

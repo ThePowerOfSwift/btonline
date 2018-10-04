@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ComingSoonViewController: BaseViewController {
+final class ComingSoonViewController: BaseViewController {
 
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -35,7 +35,7 @@ class ComingSoonViewController: BaseViewController {
         collectionView.dataSource = self
     }
 }
-
+// MARK: - UICollectionViewDataSource
 extension ComingSoonViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -49,6 +49,15 @@ extension ComingSoonViewController: UICollectionViewDataSource {
     }
 }
 
+// MARK: - UICollectionViewDelegate
+extension ComingSoonViewController: UICollectionViewDelegate {
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Selected \(indexPath.row)")
+    }
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
 extension ComingSoonViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 160, height: 300)

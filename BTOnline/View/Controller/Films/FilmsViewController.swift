@@ -9,7 +9,7 @@
 import UIKit
 import Parchment
 
-class FilmsViewController: BaseViewController {
+final class FilmsViewController: BaseViewController {
 
     // MARK: - Properties
     let viewControllers = [NowShowingViewController(), TodayViewController(), ComingSoonViewController()]

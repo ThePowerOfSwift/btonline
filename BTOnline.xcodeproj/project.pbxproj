@@ -39,8 +39,6 @@
 		B051C8C52165C22A00C0CFC8 /* DetailCinemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B051C8C32165C22A00C0CFC8 /* DetailCinemaViewController.swift */; };
 		B051C8C62165C22A00C0CFC8 /* DetailCinemaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B051C8C42165C22A00C0CFC8 /* DetailCinemaViewController.xib */; };
 		B07913B221630CF000E2627C /* NowShowingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07913B121630CF000E2627C /* NowShowingViewModel.swift */; };
-		B07913B621630D3D00E2627C /* NowShowingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07913B421630D3D00E2627C /* NowShowingCell.swift */; };
-		B07913B721630D3D00E2627C /* NowShowingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07913B521630D3D00E2627C /* NowShowingCell.xib */; };
 		B07913B921630FE000E2627C /* NowShowingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07913B821630FE000E2627C /* NowShowingCellViewModel.swift */; };
 		B07913BB2163106000E2627C /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07913BA2163105F00E2627C /* Film.swift */; };
 		B07913BD21634A3600E2627C /* TodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07913BC21634A3600E2627C /* TodayViewModel.swift */; };
@@ -52,6 +50,8 @@
 		B07913CB2163631000E2627C /* ComingSoonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07913C92163631000E2627C /* ComingSoonCell.xib */; };
 		B07913CD2163632D00E2627C /* ComingSoonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07913CC2163632D00E2627C /* ComingSoonCellViewModel.swift */; };
 		B07DB1072164B9D600ECE9A9 /* CinemaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DB1062164B9D600ECE9A9 /* CinemaViewModel.swift */; };
+		CDECD574216651AA00211895 /* NowShowingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDECD572216651AA00211895 /* NowShowingCell.swift */; };
+		CDECD575216651AA00211895 /* NowShowingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDECD573216651AA00211895 /* NowShowingCell.xib */; };
 		D028ADD12AA8716ECB14FFD9 /* Pods_MyApp_MyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49F1AB05FCB88523C52A0ED /* Pods_MyApp_MyAppTests.framework */; };
 		E3437E0A215F8C1900CE88BE /* CinemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3437E08215F8C1900CE88BE /* CinemaViewController.swift */; };
 		E3437E0B215F8C1900CE88BE /* CinemaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3437E09215F8C1900CE88BE /* CinemaViewController.xib */; };
@@ -154,8 +154,6 @@
 		B051C8C32165C22A00C0CFC8 /* DetailCinemaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCinemaViewController.swift; sourceTree = "<group>"; };
 		B051C8C42165C22A00C0CFC8 /* DetailCinemaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCinemaViewController.xib; sourceTree = "<group>"; };
 		B07913B121630CF000E2627C /* NowShowingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowShowingViewModel.swift; sourceTree = "<group>"; };
-		B07913B421630D3D00E2627C /* NowShowingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowShowingCell.swift; sourceTree = "<group>"; };
-		B07913B521630D3D00E2627C /* NowShowingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NowShowingCell.xib; sourceTree = "<group>"; };
 		B07913B821630FE000E2627C /* NowShowingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowShowingCellViewModel.swift; sourceTree = "<group>"; };
 		B07913BA2163105F00E2627C /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		B07913BC21634A3600E2627C /* TodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewModel.swift; sourceTree = "<group>"; };
@@ -170,6 +168,8 @@
 		B2CE5B92AE45202BF1551119 /* Pods-BTOnline.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOnline.staging.xcconfig"; path = "Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline.staging.xcconfig"; sourceTree = "<group>"; };
 		CAE375C3BB371FB32C5ECD9C /* Pods-BTOnline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOnline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline.debug.xcconfig"; sourceTree = "<group>"; };
 		CD6157BCFE18E6143D3CB043 /* Pods_BTOnline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTOnline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDECD572216651AA00211895 /* NowShowingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowShowingCell.swift; sourceTree = "<group>"; };
+		CDECD573216651AA00211895 /* NowShowingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NowShowingCell.xib; sourceTree = "<group>"; };
 		E3437E08215F8C1900CE88BE /* CinemaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaViewController.swift; sourceTree = "<group>"; };
 		E3437E09215F8C1900CE88BE /* CinemaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CinemaViewController.xib; sourceTree = "<group>"; };
 		E3437E0D215F8CD300CE88BE /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
@@ -341,8 +341,8 @@
 		B07913B321630D1800E2627C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				B07913B421630D3D00E2627C /* NowShowingCell.swift */,
-				B07913B521630D3D00E2627C /* NowShowingCell.xib */,
+				CDECD572216651AA00211895 /* NowShowingCell.swift */,
+				CDECD573216651AA00211895 /* NowShowingCell.xib */,
 				B07913B821630FE000E2627C /* NowShowingCellViewModel.swift */,
 			);
 			path = Cell;
@@ -652,6 +652,7 @@
 				ECCCCB161E7A40D00073D923 /* Resources */,
 				E23D44304C718C6164C90A36 /* [CP] Embed Pods Frameworks */,
 				EC01052F1E8F895300CE013D /* Embed Frameworks */,
+				24052EDB11D0EFE17E4CF6D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -671,6 +672,7 @@
 				ECCCCB291E7A40D10073D923 /* Frameworks */,
 				ECCCCB2A1E7A40D10073D923 /* Resources */,
 				C5336427CD995EA5A795B11C /* [CP] Embed Pods Frameworks */,
+				E72FBD5C6664E0A138F34B44 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -733,9 +735,9 @@
 				E3437E10215F8CD300CE88BE /* FilmsViewController.xib in Resources */,
 				B051C8C62165C22A00C0CFC8 /* DetailCinemaViewController.xib in Resources */,
 				B051C8BD2165B66900C0CFC8 /* CinemaCell.xib in Resources */,
-				B07913B721630D3D00E2627C /* NowShowingCell.xib in Resources */,
 				E3437E292161294F00CE88BE /* ComingSoonViewController.xib in Resources */,
 				B07913C221634B0300E2627C /* TodayCell.xib in Resources */,
+				CDECD575216651AA00211895 /* NowShowingCell.xib in Resources */,
 				AC369C932113F2C300FD5A02 /* PopUpTableViewCell.xib in Resources */,
 				ACB045A1210F063A00159503 /* ProfileViewController.xib in Resources */,
 				EC0105521E8F8AE000CE013D /* Assets.xcassets in Resources */,
@@ -758,6 +760,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		24052EDB11D0EFE17E4CF6D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B0E09827A261C794A6F031AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -870,6 +887,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E72FBD5C6664E0A138F34B44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTOnline-BTOnlineTests/Pods-BTOnline-BTOnlineTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EC8C6FF51ECAF27D00C52F7A /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -893,7 +925,6 @@
 			files = (
 				E3437E2B21612E9700CE88BE /* UIViewExt.swift in Sources */,
 				AC369C962113F2C300FD5A02 /* PopUpViewController.swift in Sources */,
-				B07913B621630D3D00E2627C /* NowShowingCell.swift in Sources */,
 				B07913BB2163106000E2627C /* Film.swift in Sources */,
 				B03E5A062112DE530027188E /* UIWebViewExt.swift in Sources */,
 				EC5337C11EF7939C00ACE038 /* TableCell.swift in Sources */,
@@ -908,6 +939,7 @@
 				B050EB742114358700E16758 /* API.Feed.swift in Sources */,
 				E3437E242161294000CE88BE /* NowShowingViewController.swift in Sources */,
 				B07913CD2163632D00E2627C /* ComingSoonCellViewModel.swift in Sources */,
+				CDECD574216651AA00211895 /* NowShowingCell.swift in Sources */,
 				ACB045A0210F063A00159503 /* ProfileViewController.swift in Sources */,
 				E3437E0F215F8CD300CE88BE /* FilmsViewController.swift in Sources */,
 				B07913CA2163631000E2627C /* ComingSoonCell.swift in Sources */,

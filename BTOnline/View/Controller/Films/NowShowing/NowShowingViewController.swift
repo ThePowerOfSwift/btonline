@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NowShowingViewController: BaseViewController {
+final class NowShowingViewController: BaseViewController {
 
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -20,69 +20,41 @@ class NowShowingViewController: BaseViewController {
     }
 
     // MARK: - Outlet
-    @IBOutlet private weak var collectionView: UICollectionView!
+    @IBOutlet private weak var tableView: UITableView!
 
     // MARK: - Properties
     var viewModel = NowShowingViewModel()
 
     override func setupUI() {
-        configCollectionView()
+        configTableView()
     }
 
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        updateCellsLayout()
-    }
-
-    private func updateCellsLayout() {
-        let centerX = collectionView.contentOffset.x + (collectionView.frame.size.width) / 2
-        for cell in collectionView.visibleCells {
-            var offsetX = centerX - cell.center.x
-            if offsetX < 0 {
-                offsetX *= -1
-            }
-            cell.transform = CGAffineTransform.identity
-            let offsetPercentage = offsetX / (view.bounds.width * 2.7)
-            let scaleX = 1 - offsetPercentage
-            cell.transform = CGAffineTransform(scaleX: scaleX, y: scaleX)
-        }
-    }
-
-    private func configCollectionView() {
-        collectionView.register(NowShowingCell.self)
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 30)
+    private func configTableView() {
+        tableView.register(NowShowingCell.self)
+        tableView.dataSource = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = Config.estimatedRowHeight
     }
 }
 
-extension NowShowingViewController: UICollectionViewDataSource {
+// MARK: -
+extension NowShowingViewController: UITableViewDataSource {
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfItems(inSection: section)
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeue(NowShowingCell.self, forIndexPath: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeue(NowShowingCell.self)
         cell.viewModel = viewModel.viewModelForItem(at: indexPath)
         return cell
     }
 }
 
-extension NowShowingViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+// MARK: - Config
+extension NowShowingViewController {
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
-        var cellSize: CGSize = collectionView.bounds.size
-
-        cellSize.width -= collectionView.contentInset.left * 2
-        cellSize.width -= collectionView.contentInset.right * 2
-        cellSize.height = cellSize.width + 80
-
-        return cellSize
-    }
-
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        updateCellsLayout()
+    struct Config {
+        static let estimatedRowHeight: CGFloat = 50
     }
 }

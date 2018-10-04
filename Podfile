@@ -22,7 +22,7 @@ target 'BTOnline' do
     pod 'GlidingCollection'
 
     # Data
-    pod 'ObjectMapper', '3.1.0' # Simple JSON Object mapping written in Swift. Please fix this version to 2.2.6 now.
+    pod 'ObjectMapper', '~> 3.3' # Simple JSON Object mapping written in Swift. Please fix this version to 2.2.6 now.
     # pod 'SwiftyJSON', '4.0.0' # The better way to deal with JSON data in Swift.
 
     # Network

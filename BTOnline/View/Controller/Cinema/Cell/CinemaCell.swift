@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CinemaCell: TableCell {
+final class CinemaCell: TableCell {
 
     // MARK: - Outlet
     @IBOutlet private weak var cinemaImageView: UIImageView!
