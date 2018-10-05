@@ -42,7 +42,7 @@ DEPENDENCIES:
   - Kingfisher
   - MVVM-Swift (= 1.1.0)
   - ObjectMapper (= 3.1.0)
-  - Parchment
+  - Parchment (from `https://github.com/quang-nk/Parchment`)
   - SwifterSwift
   - SwiftLint (= 0.25.0)
   - SwiftUtils (= 4.0.1)
@@ -59,11 +59,19 @@ SPEC REPOS:
     - Kingfisher
     - MVVM-Swift
     - ObjectMapper
-    - Parchment
     - SwifterSwift
     - SwiftLint
     - SwiftUtils
     - TransitionButton
+
+EXTERNAL SOURCES:
+  Parchment:
+    :git: https://github.com/quang-nk/Parchment
+
+CHECKOUT OPTIONS:
+  Parchment:
+    :commit: 5ee730bfa151346ba0fbea4c3e92e03600bc9d85
+    :git: https://github.com/quang-nk/Parchment
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
@@ -81,6 +89,6 @@ SPEC CHECKSUMS:
   SwiftUtils: b009d391fb2e285392f114238f8b55d2750b80f0
   TransitionButton: 20f92b3cc726b047e4df200fdab5307f33395a81
 
-PODFILE CHECKSUM: ccd11382e7c5d24080efbc45165ca903f110b7f1
+PODFILE CHECKSUM: 0feb58923c621b2f632f275ae8d02ae98aea47c8
 
 COCOAPODS: 1.5.3

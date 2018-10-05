@@ -49,6 +49,7 @@ extension CinemaViewController: UITableViewDataSource {
 extension CinemaViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let vc = DetailCinemaViewController()
         navigationController?.pushViewController(vc, animated: true)
     }

@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NowShowingViewController" customModule="BTOnline" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="MAf-k5-yTl" id="FlX-E3-XnB"/>
+                <outlet property="nameLabel" destination="Q5z-Bv-y20" id="ani-Zv-e3J"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,7 +34,20 @@
                 </collectionView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x24-bB-Mcm">
                     <rect key="frame" x="10" y="468" width="355" height="140"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5z-Bv-y20">
+                            <rect key="frame" x="15" y="20" width="325" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Q5z-Bv-y20" firstAttribute="top" secondItem="x24-bB-Mcm" secondAttribute="top" constant="20" id="SrZ-eH-iHB"/>
+                        <constraint firstItem="Q5z-Bv-y20" firstAttribute="leading" secondItem="x24-bB-Mcm" secondAttribute="leading" constant="15" id="qFD-QH-Act"/>
+                        <constraint firstAttribute="trailing" secondItem="Q5z-Bv-y20" secondAttribute="trailing" constant="15" id="sz5-jK-QOU"/>
+                    </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                             <size key="value" width="8" height="8"/>

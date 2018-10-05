@@ -17,7 +17,7 @@ target 'BTOnline' do
     # pod 'IQKeyboardManagerSwift', '5.0.7' # Codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView. Neither need to write any code nor any setup required and much more.
     # pod 'LGSideMenuController', '2.1.1' # iOS view controller, shows left and right views by pressing button or gesture.
     pod 'TransitionButton'
-    pod 'Parchment'
+    pod 'Parchment', :git => 'https://github.com/quang-nk/Parchment'
     pod 'FAPaginationLayout'
     pod 'GlidingCollection'
 
