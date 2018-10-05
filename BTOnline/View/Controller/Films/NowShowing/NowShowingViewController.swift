@@ -22,6 +22,7 @@ class NowShowingViewController: BaseViewController {
     // MARK: - Outlet
     @IBOutlet private weak var collectionView: UICollectionView!
 
+    @IBOutlet weak var nameLabel: UILabel!
     // MARK: - Properties
     var viewModel = NowShowingViewModel()
 
