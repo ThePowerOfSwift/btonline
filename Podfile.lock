@@ -11,6 +11,7 @@ PODS:
   - MVVM-Swift (1.1.0)
   - ObjectMapper (3.1.0)
   - Parchment (1.4.1)
+  - RAMReel (3.0.0)
   - SwifterSwift (4.4.0):
     - SwifterSwift/AppKit (= 4.4.0)
     - SwifterSwift/CoreGraphics (= 4.4.0)
@@ -43,6 +44,7 @@ DEPENDENCIES:
   - MVVM-Swift (= 1.1.0)
   - ObjectMapper (= 3.1.0)
   - Parchment (from `https://github.com/quang-nk/Parchment`)
+  - RAMReel
   - SwifterSwift
   - SwiftLint (= 0.25.0)
   - SwiftUtils (= 4.0.1)
@@ -59,6 +61,7 @@ SPEC REPOS:
     - Kingfisher
     - MVVM-Swift
     - ObjectMapper
+    - RAMReel
     - SwifterSwift
     - SwiftLint
     - SwiftUtils
@@ -84,11 +87,12 @@ SPEC CHECKSUMS:
   MVVM-Swift: 54749cc12bb30af41632f30a2c576a18bf9e4bc8
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   Parchment: e6c2a3a0063739382dd207e21d48fe5e81f3324a
+  RAMReel: a123d736773901a9a3d2ef559c176a50c338b5de
   SwifterSwift: 1ce0e31801ddd3a2bd3256626275425adb01067a
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
   SwiftUtils: b009d391fb2e285392f114238f8b55d2750b80f0
   TransitionButton: 20f92b3cc726b047e4df200fdab5307f33395a81
 
-PODFILE CHECKSUM: 0feb58923c621b2f632f275ae8d02ae98aea47c8
+PODFILE CHECKSUM: a73224d1eee7e01c6d54eeac501e7578162604d8
 
 COCOAPODS: 1.5.3

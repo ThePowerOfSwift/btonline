@@ -52,6 +52,7 @@
 		B07913CB2163631000E2627C /* ComingSoonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07913C92163631000E2627C /* ComingSoonCell.xib */; };
 		B07913CD2163632D00E2627C /* ComingSoonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07913CC2163632D00E2627C /* ComingSoonCellViewModel.swift */; };
 		B07DB1072164B9D600ECE9A9 /* CinemaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DB1062164B9D600ECE9A9 /* CinemaViewModel.swift */; };
+		B092625821671D620035DDC9 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B092625721671D620035DDC9 /* SearchViewModel.swift */; };
 		D028ADD12AA8716ECB14FFD9 /* Pods_MyApp_MyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49F1AB05FCB88523C52A0ED /* Pods_MyApp_MyAppTests.framework */; };
 		E3437E0A215F8C1900CE88BE /* CinemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3437E08215F8C1900CE88BE /* CinemaViewController.swift */; };
 		E3437E0B215F8C1900CE88BE /* CinemaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3437E09215F8C1900CE88BE /* CinemaViewController.xib */; };
@@ -167,6 +168,7 @@
 		B07913C92163631000E2627C /* ComingSoonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComingSoonCell.xib; sourceTree = "<group>"; };
 		B07913CC2163632D00E2627C /* ComingSoonCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonCellViewModel.swift; sourceTree = "<group>"; };
 		B07DB1062164B9D600ECE9A9 /* CinemaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaViewModel.swift; sourceTree = "<group>"; };
+		B092625721671D620035DDC9 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		B2CE5B92AE45202BF1551119 /* Pods-BTOnline.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOnline.staging.xcconfig"; path = "Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline.staging.xcconfig"; sourceTree = "<group>"; };
 		CAE375C3BB371FB32C5ECD9C /* Pods-BTOnline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOnline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline.debug.xcconfig"; sourceTree = "<group>"; };
 		CD6157BCFE18E6143D3CB043 /* Pods_BTOnline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTOnline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -306,6 +308,7 @@
 			children = (
 				ACB0459A210F061C00159503 /* SearchViewController.swift */,
 				ACB0459B210F061C00159503 /* SearchViewController.xib */,
+				B092625721671D620035DDC9 /* SearchViewModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -809,6 +812,7 @@
 				"${BUILT_PRODUCTS_DIR}/MVVM-Swift/MVVM.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Parchment/Parchment.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMReel/RAMReel.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftUtils/SwiftUtils.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
@@ -823,6 +827,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MVVM.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parchment.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMReel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftUtils.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
@@ -847,6 +852,7 @@
 				"${BUILT_PRODUCTS_DIR}/MVVM-Swift/MVVM.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Parchment/Parchment.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMReel/RAMReel.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftUtils/SwiftUtils.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
@@ -861,6 +867,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MVVM.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parchment.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMReel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftUtils.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
@@ -909,6 +916,7 @@
 				E3437E242161294000CE88BE /* NowShowingViewController.swift in Sources */,
 				B07913CD2163632D00E2627C /* ComingSoonCellViewModel.swift in Sources */,
 				ACB045A0210F063A00159503 /* ProfileViewController.swift in Sources */,
+				B092625821671D620035DDC9 /* SearchViewModel.swift in Sources */,
 				E3437E0F215F8CD300CE88BE /* FilmsViewController.swift in Sources */,
 				B07913CA2163631000E2627C /* ComingSoonCell.swift in Sources */,
 				ECC5B2CD1EF906CA001A97BC /* BaseViewController.swift in Sources */,

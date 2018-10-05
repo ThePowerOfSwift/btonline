@@ -20,6 +20,7 @@ target 'BTOnline' do
     pod 'Parchment', :git => 'https://github.com/quang-nk/Parchment'
     pod 'FAPaginationLayout'
     pod 'GlidingCollection'
+    pod 'RAMReel'
 
     # Data
     pod 'ObjectMapper', '3.1.0' # Simple JSON Object mapping written in Swift. Please fix this version to 2.2.6 now.
