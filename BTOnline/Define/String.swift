@@ -27,11 +27,9 @@ extension App {
         static let popUpCopy = "Copy"
 
         //Film
-        static let titleNowShowing = "Now Showing"
-        static let titleComingSoon = "Coming Soon"
-        static let titleToday = "Today"
+        static let titleNowShowing = "NOW SHOWING"
+        static let titleComingSoon = "COMING SOON"
+        static let titleToday = "TODAY"
 
-        //Cinema
-        static let titleCinema = "Cinema"
     }
 }

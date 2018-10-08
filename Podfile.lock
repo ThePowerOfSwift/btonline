@@ -70,7 +70,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Parchment:
-    :commit: 5ee730bfa151346ba0fbea4c3e92e03600bc9d85
+    :commit: 20c906096012183d730f960fb6f83b1ffa377417
     :git: https://github.com/quang-nk/Parchment
 
 SPEC CHECKSUMS:

@@ -16,8 +16,8 @@ final class CinemaViewController: BaseViewController {
     // MARK: - Properties
     var viewModel = CinemaViewModel()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func setupUI() {
+        navigationController?.navigationBar.isHidden = true
         configTableView()
     }
 

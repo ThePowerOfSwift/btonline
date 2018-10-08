@@ -43,8 +43,9 @@ final class TodayViewController: BaseViewController {
 
     private func configGlidingView() {
         var config = GlidingConfig.shared
-        config.activeButtonColor = .black
-        config.buttonsFont = UIFont.boldSystemFont(ofSize: 20)
+        config.activeButtonColor = App.Color.textTitle
+        guard let font = UIFont(name: "Montserrat-SemiBold", size: 20) else { return }
+        config.buttonsFont = font
         GlidingConfig.shared = config
     }
 }
