@@ -2,17 +2,19 @@
 //  NowShowingCell.swift
 //  BTOnline
 //
-//  Created by Quang Nguyen K. on 10/2/18.
+//  Created by Quang Nguyen K. on 10/4/18.
 //  Copyright © 2018 Asian Tech Co., Ltd. All rights reserved.
 //
 
 import UIKit
 
-class NowShowingCell: CollectionCell {
+final class NowShowingCell: TableCell {
 
+    // MARK: - Outlet
     @IBOutlet private weak var filmImageView: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var durationLabel: UILabel!
 
-    // MARK: - Properties
     var viewModel = NowShowingCellViewModel() {
         didSet {
             updateView()
@@ -21,6 +23,7 @@ class NowShowingCell: CollectionCell {
 
     private func updateView() {
         filmImageView.image = UIImage(named: viewModel.imagePath)
+        nameLabel.text = viewModel.name
+        durationLabel.text = viewModel.describe
     }
-
 }

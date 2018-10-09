@@ -16,7 +16,7 @@ final class NowShowingViewModel: ViewModel {
     // TODO: - Dummy data
     init() {
         for i in 1...10 {
-            films.append(Film(imagePath: "img_test\(i % 2)", name: "Film \(i)", describe: "abcd1234"))
+            films.append(Film(imagePath: "img_ns\(i % 2)", name: "FILM NAME \(i)", describe: "1 HR 50 MIN"))
         }
     }
 }

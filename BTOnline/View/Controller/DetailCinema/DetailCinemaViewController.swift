@@ -14,4 +14,7 @@ class DetailCinemaViewController: BaseViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func backButtonTouchUpInside(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
 }
