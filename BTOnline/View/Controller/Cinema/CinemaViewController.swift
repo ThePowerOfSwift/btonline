@@ -25,7 +25,7 @@ final class CinemaViewController: BaseViewController {
         tableView.register(CinemaCell.self)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = Config.estimatedRowHeight
     }
 }

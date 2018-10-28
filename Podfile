@@ -1,70 +1,83 @@
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/cocoapods/specs.git'
 platform :ios, '9.0'
 inhibit_all_warnings!
 use_frameworks!
-install! 'cocoapods', :deterministic_uuids => false
 
 workspace 'BTOnline.xcworkspace'
 
 target 'BTOnline' do
     project 'BTOnline'
-
+    
     # Architect
     pod 'MVVM-Swift', '1.1.0' # MVVM Architect for iOS Application.
-
-    # UI
-    # pod 'SVProgressHUD', '2.2.5' # A clean and lightweight progress HUD for your iOS and tvOS app.
-    # pod 'IQKeyboardManagerSwift', '5.0.7' # Codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView. Neither need to write any code nor any setup required and much more.
-    # pod 'LGSideMenuController', '2.1.1' # iOS view controller, shows left and right views by pressing button or gesture.
-    pod 'TransitionButton'
-    pod 'Parchment', :git => 'https://github.com/quang-nk/Parchment'
-    pod 'FAPaginationLayout'
-    pod 'GlidingCollection'
-    pod 'RAMReel'
-
+    
     # Data
-    pod 'ObjectMapper', '3.1.0' # Simple JSON Object mapping written in Swift. Please fix this version to 2.2.6 now.
-    # pod 'SwiftyJSON', '4.0.0' # The better way to deal with JSON data in Swift.
-
+    pod 'ObjectMapper', '3.3.0' # Simple JSON Object mapping written in Swift.
+    
     # Network
-    pod 'Alamofire', '4.6.0' # Elegant HTTP Networking in Swift.
-    pod 'AlamofireNetworkActivityIndicator', '2.2.0' # Controls the visibility of the network activity indicator on iOS using Alamofire.
-    #pod 'OAuthSwift', :git => 'https://github.com/HaidctDN/OAuthSwift'
+    pod 'Alamofire', '4.7.3' # Elegant HTTP Networking in Swift.
+    pod 'AlamofireNetworkActivityIndicator', '2.3.0' # Controls the visibility of the network activity indicator on iOS using Alamofire.
     pod 'Kingfisher'
 
     # Utils
-    pod 'SwiftLint', '0.25.0' # A tool to enforce Swift style and conventions.
-    pod 'SwiftUtils', '4.0.1' # Swift shorthand.
-    pod 'SwifterSwift'
+    pod 'SwiftLint', '0.27.0' # A tool to enforce Swift style and conventions.
+    pod 'SwiftUtils', '4.0.1'
+    pod 'SwiftDate', '4.5.1'
+    pod 'AsyncSwift', '2.0.4'
+    pod 'CocoaLumberjack/Swift', '3.4.2'
+    pod 'SwifterSwift', '4.6.0'
+    pod 'SDWebImage', '4.4.1'
+    pod 'IQKeyboardManagerSwift', '6.0.4'
+    pod 'SwiftyRSA', '1.5.0'
+    pod 'JWTDecode', '~> 2.1'
+    
+    # UI
+    pod 'Parchment', :git => 'https://github.com/quang-nk/Parchment'
+    pod 'GlidingCollection'
+    pod 'RAMReel'
+    pod 'TransitionButton'
 
-    # pod 'AsyncSwift', '2.0.4' # Syntactic sugar in Swift for asynchronous dispatches in Grand Central Dispatch.
-    # pod 'SwiftyUserDefaults', '3.0.1' # Modern Swift API for NSUserDefaults.
-    # pod 'DeviceKit', '1.5.0' # DeviceKit is a value-type replacement of UIDevice.
-    # pod 'SAMKeychain', '1.5.3' # Simple Objective-C wrapper for the keychain that works on Mac and iOS.
-    # pod 'KeychainAccess', '3.1.0' # Simple Swift wrapper for Keychain that works on iOS, watchOS, tvOS and macOS.
-
+#    pod 'SVProgressHUD', '2.2.5'
+#    pod 'GradientLoadingBar', '1.1.12'
+#    pod 'JVFloatLabeledTextField', '1.2.1'
+#    pod 'MXParallaxHeader', :git => 'https://github.com/blkbrds/MXParallaxHeader', :commit => 'be8d71d'
+#    pod 'FaveButton', :git => 'https://github.com/blkbrds/fave-button', :branch => 'update_swift4', :commit => '78c2dc4'
+#
     # Crash reporting & beta deployment
     pod 'Fabric'
     pod 'Crashlytics'
+#    pod 'DeployGateSDK'
 
-target 'BTOnlineTests' do
-    inherit! :complete
+    # Rx
+#    pod 'RxSwift', '4.3.1'
+#    pod 'RxCocoa', '4.3.1'
+
+    target 'BTOnlineTests' do
+        inherit! :complete
+        pod 'Nimble', '7.3.1'
+        pod 'Quick', '1.3.2'
+        pod 'Mockingjay', '2.0.1'
+        pod 'RxTest', '4.3.1'
+        pod 'RxBlocking', '4.3.1'
+    end
 end
 
 post_install do |installer|
-    installer.pods_project.build_configurations.each do |config|
-        config.build_settings.delete('CODE_SIGNING_ALLOWED')
-        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+    installer.pods_project.targets.each do |target|
+        if ['SwiftUtils', 'FaveButton'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4'
+            end
+        end
     end
     
-    installer.pods_project.targets.each do |target|
-        target.build_configurations.each do |config|
-            if config.name == 'Release'
-                config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Owholemodule'
-            end
-            config.build_settings['SWIFT_VERSION'] = '4.0'
+    installer.pods_project.build_configurations.each do |config|
+        if config.name.include? 'Debug'
+            config.build_settings['ONLY_ACTIVE_ARCH'] = 'YES'
+            config.build_settings['ENABLE_TESTABILITY'] = 'YES'
         end
+        if config.name == 'Release'
+            config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Owholemodule'
         end
     end
 end
-
