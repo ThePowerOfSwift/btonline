@@ -24,13 +24,13 @@ target 'BTOnline' do
     pod 'SwiftUtils', '4.0.1'
     pod 'SwiftDate', '4.5.1'
     pod 'AsyncSwift', '2.0.4'
-    pod 'CocoaLumberjack/Swift', '3.4.2'
+#    pod 'CocoaLumberjack/Swift', '3.4.2'
     pod 'SwifterSwift', '4.6.0'
-    pod 'SDWebImage', '4.4.1'
-    pod 'IQKeyboardManagerSwift', '6.0.4'
-    pod 'SwiftyRSA', '1.5.0'
-    pod 'JWTDecode', '~> 2.1'
-    
+#    pod 'SDWebImage', '4.4.1'
+#    pod 'IQKeyboardManagerSwift', '6.0.4'
+#    pod 'SwiftyRSA', '1.5.0'
+#    pod 'JWTDecode', '~> 2.1'
+
     # UI
     pod 'Parchment', :git => 'https://github.com/quang-nk/Parchment'
     pod 'GlidingCollection'
