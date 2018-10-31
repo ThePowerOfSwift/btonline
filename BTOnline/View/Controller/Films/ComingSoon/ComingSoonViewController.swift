@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUtils
 
 class ComingSoonViewController: BaseViewController {
 
@@ -50,11 +51,18 @@ extension ComingSoonViewController: UICollectionViewDataSource {
 }
 
 extension ComingSoonViewController: UICollectionViewDelegateFlowLayout {
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 160, height: 300)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
+
+        if iPhone6p {
+            return UIEdgeInsets(top: 10, left: 28, bottom: 10, right: 28)
+
+        } else {
+            return UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
+        }
     }
 }

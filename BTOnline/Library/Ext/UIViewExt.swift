@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUtils
 
 extension UIView {
 
@@ -14,14 +15,27 @@ extension UIView {
 
         subview.translatesAutoresizingMaskIntoConstraints = false
 
-        let topContraint = NSLayoutConstraint(
-            item: subview,
-            attribute: .top,
-            relatedBy: .equal,
-            toItem: self,
-            attribute: .top,
-            multiplier: 1.0,
-            constant: 27)
+        var topContraint = NSLayoutConstraint()
+
+        if iPhoneX {
+            topContraint = NSLayoutConstraint(
+                item: subview,
+                attribute: .top,
+                relatedBy: .equal,
+                toItem: self,
+                attribute: .top,
+                multiplier: 1.0,
+                constant: 30)
+        } else {
+            topContraint = NSLayoutConstraint(
+                item: subview,
+                attribute: .top,
+                relatedBy: .equal,
+                toItem: self,
+                attribute: .top,
+                multiplier: 1.0,
+                constant: 20)
+        }
 
         let bottomConstraint = NSLayoutConstraint(
             item: subview,
