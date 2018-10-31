@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -51,20 +49,43 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-L1-WTJ">
-                                        <rect key="frame" x="116" y="94.5" width="143" height="143"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEg-Y1-tKs" userLabel="Avatar View">
+                                        <rect key="frame" x="112.5" y="92" width="150" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-L1-WTJ">
+                                                <rect key="frame" x="1" y="1" width="148" height="148"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="8dv-L1-WTJ" secondAttribute="height" id="PYj-D7-3At"/>
+                                                    <constraint firstAttribute="height" constant="148" id="b3S-Yl-OIO"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="74"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="8dv-L1-WTJ" secondAttribute="height" id="PYj-D7-3At"/>
+                                            <constraint firstAttribute="width" secondItem="WEg-Y1-tKs" secondAttribute="height" multiplier="1:1" id="SZ1-SE-EMz"/>
+                                            <constraint firstAttribute="height" constant="150" id="Wr1-Qi-aOh"/>
+                                            <constraint firstItem="8dv-L1-WTJ" firstAttribute="centerX" secondItem="WEg-Y1-tKs" secondAttribute="centerX" id="n79-Zy-Czb"/>
+                                            <constraint firstItem="8dv-L1-WTJ" firstAttribute="centerY" secondItem="WEg-Y1-tKs" secondAttribute="centerY" id="pTl-3s-4WH"/>
                                         </constraints>
-                                    </imageView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="75"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5A5-WD-7R3">
-                                        <rect key="frame" x="163.5" y="300" width="48" height="21"/>
+                                        <rect key="frame" x="163.5" y="303" width="48" height="21"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
-                                        <color key="textColor" red="0.65828800201416016" green="0.67439377307891846" blue="0.68684762716293335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.425889428603346" green="0.43819179474064446" blue="0.4436481452976484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCI-GG-hOL">
-                                        <rect key="frame" x="154.5" y="256" width="66" height="29"/>
+                                        <rect key="frame" x="154.5" y="259" width="66" height="29"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="23"/>
                                         <color key="textColor" red="0.30588235289999999" green="0.3803921569" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -72,11 +93,11 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="5A5-WD-7R3" firstAttribute="centerX" secondItem="U9q-BW-rCv" secondAttribute="centerX" id="15B-H5-wI2"/>
-                                    <constraint firstItem="bCI-GG-hOL" firstAttribute="top" secondItem="8dv-L1-WTJ" secondAttribute="bottom" constant="18" id="2RH-CA-YVO"/>
-                                    <constraint firstItem="8dv-L1-WTJ" firstAttribute="centerX" secondItem="U9q-BW-rCv" secondAttribute="centerX" id="4mc-cm-mUk"/>
-                                    <constraint firstItem="8dv-L1-WTJ" firstAttribute="centerY" secondItem="U9q-BW-rCv" secondAttribute="centerY" id="D7C-RI-7EH"/>
+                                    <constraint firstItem="bCI-GG-hOL" firstAttribute="top" secondItem="WEg-Y1-tKs" secondAttribute="bottom" constant="17" id="CzN-8X-N9u"/>
                                     <constraint firstItem="5A5-WD-7R3" firstAttribute="top" secondItem="bCI-GG-hOL" secondAttribute="bottom" constant="15" id="Jar-2g-mqV"/>
+                                    <constraint firstItem="WEg-Y1-tKs" firstAttribute="centerY" secondItem="U9q-BW-rCv" secondAttribute="centerY" id="b2l-is-iBl"/>
                                     <constraint firstItem="bCI-GG-hOL" firstAttribute="centerX" secondItem="U9q-BW-rCv" secondAttribute="centerX" id="de2-T1-CFr"/>
+                                    <constraint firstItem="WEg-Y1-tKs" firstAttribute="centerX" secondItem="U9q-BW-rCv" secondAttribute="centerX" id="kyv-UZ-L5V"/>
                                 </constraints>
                             </view>
                             <blurEffect style="light"/>
@@ -84,7 +105,6 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="8dv-L1-WTJ" firstAttribute="height" secondItem="pDD-bf-mXH" secondAttribute="height" multiplier="3:7" id="0EK-Eu-eEy"/>
                         <constraint firstItem="QUB-mR-J5H" firstAttribute="top" secondItem="pDD-bf-mXH" secondAttribute="top" id="41l-5f-2VB"/>
                         <constraint firstAttribute="bottom" secondItem="Rq0-dI-y4L" secondAttribute="bottom" id="6Eo-Hb-4gM"/>
                         <constraint firstAttribute="bottom" secondItem="QUB-mR-J5H" secondAttribute="bottom" id="CpQ-Mf-EY5"/>
