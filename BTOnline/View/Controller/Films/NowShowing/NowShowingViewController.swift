@@ -32,7 +32,7 @@ final class NowShowingViewController: BaseViewController {
     private func configTableView() {
         tableView.register(NowShowingCell.self)
         tableView.dataSource = self
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = Config.estimatedRowHeight
     }
 }

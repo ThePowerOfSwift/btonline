@@ -21,9 +21,9 @@ class FilmsViewController: BaseViewController {
 
     private func configParchment() {
         let pagingViewController = FixedPagingViewController(viewControllers: viewControllers)
-        addChildViewController(pagingViewController)
+        addChild(pagingViewController)
         view.addSubview(pagingViewController.view)
         view.constrainToEdges(pagingViewController.view)
-        pagingViewController.didMove(toParentViewController: self)
+        pagingViewController.didMove(toParent: self)
     }
 }

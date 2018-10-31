@@ -22,9 +22,9 @@ extension App {
         static let navigationBarTintColor = UIColor.white
         static let textTitle = UIColor.RGB(78, 97, 129)
         static let tabBarTintColor = UIColor.RGB(78, 97, 129)
-        static func button(state: UIControlState) -> UIColor {
+        static func button(state: UIControl.State) -> UIColor {
             switch state {
-            case UIControlState.normal: return .blue
+            case UIControl.State.normal: return .blue
             default: return .gray
             }
         }

@@ -18,7 +18,7 @@ final class ProfileViewModel: ViewModel {
 }
 
 extension ProfileViewModel {
-    
+
     func numberOfItems(inSection section: Int) -> Int {
         return profileMenu.count
     }

@@ -29,7 +29,6 @@ final class ProfileViewController: BaseViewController {
 
     private func configView() {
         backgroundImageView.image = #imageLiteral(resourceName: "img-avatar-test")
-        avatarImageView.layer.cornerRadius = avatarImageView.frame.height / 2
         avatarImageView.image = #imageLiteral(resourceName: "img-avatar-test")
         nameLabel.text = "John Cena"
         localLabel.text = "Da Nang"
