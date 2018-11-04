@@ -32,6 +32,7 @@ final class NowShowingViewController: BaseViewController {
     private func configTableView() {
         tableView.register(NowShowingCell.self)
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = Config.estimatedRowHeight
     }
@@ -48,6 +49,15 @@ extension NowShowingViewController: UITableViewDataSource {
         let cell = tableView.dequeue(NowShowingCell.self)
         cell.viewModel = viewModel.viewModelForItem(at: indexPath)
         return cell
+    }
+}
+
+// MARK: -
+extension NowShowingViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = DetailFilmViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

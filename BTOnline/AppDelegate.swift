@@ -50,25 +50,29 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         case .login:
             //Films
             let filmsVC = FilmsViewController()
-            let filmsTabBarItem = UITabBarItem(title: "Films", image: #imageLiteral(resourceName: "ic_tabbar_home"), selectedImage: #imageLiteral(resourceName: "ic_tabbar_home"))
+            let filmsTabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "ic_tabbar_film"), selectedImage: #imageLiteral(resourceName: "ic_tabbar_film_s"))
+            filmsTabBarItem.imageInsets = Config.tabbarImageInsets
             filmsVC.tabBarItem = filmsTabBarItem
             let homeNC = BaseNavigationController(rootViewController: filmsVC)
 
             //Cinema
             let cinemaVC = CinemaViewController()
-            let cinemaTabBarItem = UITabBarItem(title: "Cinemas", image: #imageLiteral(resourceName: "ic_tabbar_follower"), selectedImage: #imageLiteral(resourceName: "ic_tabbar_follower"))
+            let cinemaTabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "ic_tabbar_cinema"), selectedImage: #imageLiteral(resourceName: "ic_tabbar_cinema_s"))
+            cinemaTabBarItem.imageInsets = Config.tabbarImageInsets
             cinemaVC.tabBarItem = cinemaTabBarItem
             let followNC = BaseNavigationController(rootViewController: cinemaVC)
 
             //search
             let searchVC = SearchViewController()
-            let searchTabBarItem = UITabBarItem(title: "Search", image: #imageLiteral(resourceName: "ic_tabbar_search"), selectedImage: #imageLiteral(resourceName: "ic_tabbar_search"))
+            let searchTabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "ic_tabbar_search"), selectedImage: #imageLiteral(resourceName: "ic_tabbar_search_s"))
+            searchTabBarItem.imageInsets = Config.tabbarImageInsets
             searchVC.tabBarItem = searchTabBarItem
             let searchNC = BaseNavigationController(rootViewController: searchVC)
 
             //profile
             let profileVC = ProfileViewController()
-            let profileTabBarItem = UITabBarItem(title: "Profile", image: #imageLiteral(resourceName: "ic_tabbar_profile"), selectedImage: #imageLiteral(resourceName: "ic_tabbar_profile"))
+            let profileTabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "ic_tabbar_profile-1"), selectedImage: #imageLiteral(resourceName: "ic_tabbar_profile_s"))
+            profileTabBarItem.imageInsets = Config.tabbarImageInsets
             profileVC.tabBarItem = profileTabBarItem
             let profileNC = BaseNavigationController(rootViewController: profileVC)
 
@@ -99,4 +103,12 @@ extension AppDelegate {
 //        }
 //        return true
 //    }
+}
+
+// MARK: - Config
+extension AppDelegate {
+
+    struct Config {
+        static let tabbarImageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+    }
 }

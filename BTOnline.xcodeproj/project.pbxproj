@@ -113,6 +113,9 @@
 		ECF23ABE1E9B8A6A008C23C1 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF23ABD1E9B8A6A008C23C1 /* Error.swift */; };
 		ECF23AC31E9B9264008C23C1 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF23AC21E9B9264008C23C1 /* StringExt.swift */; };
 		F1C6352C1EF141F300D0A1A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C6352B1EF141F300D0A1A0 /* LaunchScreen.storyboard */; };
+		F549634B218A941C0030CBF1 /* DetailFilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5496349218A941C0030CBF1 /* DetailFilmViewController.swift */; };
+		F549634C218A941C0030CBF1 /* DetailFilmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F549634A218A941C0030CBF1 /* DetailFilmViewController.xib */; };
+		F549634E218A944B0030CBF1 /* DetailFilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549634D218A944B0030CBF1 /* DetailFilmViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -261,6 +264,9 @@
 		F07A209F0FD08F6DD436ACA6 /* Pods-BTOnline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTOnline.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTOnline/Pods-BTOnline.release.xcconfig"; sourceTree = "<group>"; };
 		F1C6352B1EF141F300D0A1A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F49F1AB05FCB88523C52A0ED /* Pods_MyApp_MyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyApp_MyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5496349218A941C0030CBF1 /* DetailFilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilmViewController.swift; sourceTree = "<group>"; };
+		F549634A218A941C0030CBF1 /* DetailFilmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailFilmViewController.xib; sourceTree = "<group>"; };
+		F549634D218A944B0030CBF1 /* DetailFilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilmViewModel.swift; sourceTree = "<group>"; };
 		FA33ABB555FDDC9158D68749 /* Pods-MyApp-MyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-MyAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp-MyAppTests/Pods-MyApp-MyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -328,6 +334,7 @@
 		ACB04582210EFF4400159503 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F5496348218A93BF0030CBF1 /* DetailFilm */,
 				B051C8C22165C17A00C0CFC8 /* DetailCinema */,
 				E3437E07215F898000CE88BE /* Cinema */,
 				E3437E0C215F8CBD00CE88BE /* Films */,
@@ -726,6 +733,16 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
+		F5496348218A93BF0030CBF1 /* DetailFilm */ = {
+			isa = PBXGroup;
+			children = (
+				F5496349218A941C0030CBF1 /* DetailFilmViewController.swift */,
+				F549634A218A941C0030CBF1 /* DetailFilmViewController.xib */,
+				F549634D218A944B0030CBF1 /* DetailFilmViewModel.swift */,
+			);
+			path = DetailFilm;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -828,6 +845,7 @@
 				B07FECD0216EFB31007883D5 /* ProfileCell.xib in Resources */,
 				B051C8BD2165B66900C0CFC8 /* CinemaCell.xib in Resources */,
 				B0606C6D216B45C80046F5CD /* Montserrat-Light.ttf in Resources */,
+				F549634C218A941C0030CBF1 /* DetailFilmViewController.xib in Resources */,
 				B0606C5D216B45C80046F5CD /* Montserrat-Regular.ttf in Resources */,
 				E3437E292161294F00CE88BE /* ComingSoonViewController.xib in Resources */,
 				B07913C221634B0300E2627C /* TodayCell.xib in Resources */,
@@ -1042,10 +1060,12 @@
 				E3437E0F215F8CD300CE88BE /* FilmsViewController.swift in Sources */,
 				B07913CA2163631000E2627C /* ComingSoonCell.swift in Sources */,
 				B0B86338216CA598007912C9 /* SearchViewModel.swift in Sources */,
+				F549634B218A941C0030CBF1 /* DetailFilmViewController.swift in Sources */,
 				ECC5B2CD1EF906CA001A97BC /* BaseViewController.swift in Sources */,
 				EC5337C31EF793B100ACE038 /* CollectionCell.swift in Sources */,
 				B07913BD21634A3600E2627C /* TodayViewModel.swift in Sources */,
 				B051C8C52165C22A00C0CFC8 /* DetailCinemaViewController.swift in Sources */,
+				F549634E218A944B0030CBF1 /* DetailFilmViewModel.swift in Sources */,
 				ECF23ABA1E9B89B2008C23C1 /* RequestSerializer.swift in Sources */,
 				B07C2CD2216C38430071959A /* NowShowingViewModel.swift in Sources */,
 				B07913C62163622B00E2627C /* ComingSoonViewModel.swift in Sources */,
