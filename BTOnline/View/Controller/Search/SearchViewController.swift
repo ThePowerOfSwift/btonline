@@ -22,7 +22,7 @@ class SearchViewController: BaseViewController {
     }
 
     override func setupUI() {
-        title = "Search"
+
     }
 
     private func configRamReel() {

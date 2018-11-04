@@ -53,13 +53,19 @@ extension ComingSoonViewController: UICollectionViewDataSource {
 extension ComingSoonViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 160, height: 300)
+
+        if iPhone6p {
+            return CGSize(width: 170, height: 300)
+
+        } else {
+            return CGSize(width: 160, height: 290)
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
 
         if iPhone6p {
-            return UIEdgeInsets(top: 10, left: 28, bottom: 10, right: 28)
+            return UIEdgeInsets(top: 10, left: 23, bottom: 10, right: 23)
 
         } else {
             return UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
