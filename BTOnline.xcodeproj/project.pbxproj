@@ -116,6 +116,14 @@
 		F549634B218A941C0030CBF1 /* DetailFilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5496349218A941C0030CBF1 /* DetailFilmViewController.swift */; };
 		F549634C218A941C0030CBF1 /* DetailFilmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F549634A218A941C0030CBF1 /* DetailFilmViewController.xib */; };
 		F549634E218A944B0030CBF1 /* DetailFilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549634D218A944B0030CBF1 /* DetailFilmViewModel.swift */; };
+		F5F2BD93218FFAA30062B9D4 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2BD91218FFAA30062B9D4 /* CommentViewController.swift */; };
+		F5F2BD94218FFAA30062B9D4 /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F2BD92218FFAA30062B9D4 /* CommentViewController.xib */; };
+		F5F2BD96218FFAC60062B9D4 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2BD95218FFAC60062B9D4 /* CommentViewModel.swift */; };
+		F5F2BD98218FFB2E0062B9D4 /* DetailCinemaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2BD97218FFB2E0062B9D4 /* DetailCinemaViewModel.swift */; };
+		F5F2BD9C219001A50062B9D4 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2BD9A219001A50062B9D4 /* CommentCell.swift */; };
+		F5F2BD9D219001A50062B9D4 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F2BD9B219001A50062B9D4 /* CommentCell.xib */; };
+		F5F2BD9F219001B90062B9D4 /* CommentCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2BD9E219001B90062B9D4 /* CommentCellViewModel.swift */; };
+		F5F2BDA121901BB10062B9D4 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F2BDA021901BB10062B9D4 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -267,6 +275,14 @@
 		F5496349218A941C0030CBF1 /* DetailFilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilmViewController.swift; sourceTree = "<group>"; };
 		F549634A218A941C0030CBF1 /* DetailFilmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailFilmViewController.xib; sourceTree = "<group>"; };
 		F549634D218A944B0030CBF1 /* DetailFilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilmViewModel.swift; sourceTree = "<group>"; };
+		F5F2BD91218FFAA30062B9D4 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		F5F2BD92218FFAA30062B9D4 /* CommentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
+		F5F2BD95218FFAC60062B9D4 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		F5F2BD97218FFB2E0062B9D4 /* DetailCinemaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCinemaViewModel.swift; sourceTree = "<group>"; };
+		F5F2BD9A219001A50062B9D4 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		F5F2BD9B219001A50062B9D4 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		F5F2BD9E219001B90062B9D4 /* CommentCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCellViewModel.swift; sourceTree = "<group>"; };
+		F5F2BDA021901BB10062B9D4 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		FA33ABB555FDDC9158D68749 /* Pods-MyApp-MyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-MyAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp-MyAppTests/Pods-MyApp-MyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -334,6 +350,7 @@
 		ACB04582210EFF4400159503 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F5F2BD90218FFA510062B9D4 /* Comment */,
 				F5496348218A93BF0030CBF1 /* DetailFilm */,
 				B051C8C22165C17A00C0CFC8 /* DetailCinema */,
 				E3437E07215F898000CE88BE /* Cinema */,
@@ -392,6 +409,7 @@
 			children = (
 				B051C8C32165C22A00C0CFC8 /* DetailCinemaViewController.swift */,
 				B051C8C42165C22A00C0CFC8 /* DetailCinemaViewController.xib */,
+				F5F2BD97218FFB2E0062B9D4 /* DetailCinemaViewModel.swift */,
 			);
 			path = DetailCinema;
 			sourceTree = "<group>";
@@ -676,6 +694,7 @@
 				B07913BA2163105F00E2627C /* Film.swift */,
 				B051C8C02165BB1A00C0CFC8 /* Cinema.swift */,
 				B07FECD3216F026E007883D5 /* ProfileMenu.swift */,
+				F5F2BDA021901BB10062B9D4 /* Comment.swift */,
 			);
 			path = Schema;
 			sourceTree = "<group>";
@@ -741,6 +760,27 @@
 				F549634D218A944B0030CBF1 /* DetailFilmViewModel.swift */,
 			);
 			path = DetailFilm;
+			sourceTree = "<group>";
+		};
+		F5F2BD90218FFA510062B9D4 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				F5F2BD99218FFEFB0062B9D4 /* Cell */,
+				F5F2BD91218FFAA30062B9D4 /* CommentViewController.swift */,
+				F5F2BD92218FFAA30062B9D4 /* CommentViewController.xib */,
+				F5F2BD95218FFAC60062B9D4 /* CommentViewModel.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		F5F2BD99218FFEFB0062B9D4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F5F2BD9A219001A50062B9D4 /* CommentCell.swift */,
+				F5F2BD9B219001A50062B9D4 /* CommentCell.xib */,
+				F5F2BD9E219001B90062B9D4 /* CommentCellViewModel.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -832,6 +872,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F2BD94218FFAA30062B9D4 /* CommentViewController.xib in Resources */,
 				B0606C5C216B45C80046F5CD /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				ACB0458D210F040C00159503 /* LoginViewController.xib in Resources */,
 				E3437E0B215F8C1900CE88BE /* CinemaViewController.xib in Resources */,
@@ -866,6 +907,7 @@
 				F1C6352C1EF141F300D0A1A0 /* LaunchScreen.storyboard in Resources */,
 				B0606C6A216B45C80046F5CD /* Montserrat-ExtraLight.ttf in Resources */,
 				B0606C61216B45C80046F5CD /* Montserrat-Bold.ttf in Resources */,
+				F5F2BD9D219001A50062B9D4 /* CommentCell.xib in Resources */,
 				ACB0459D210F061C00159503 /* SearchViewController.xib in Resources */,
 				B07C2CCB216C38330071959A /* NowShowingCell.xib in Resources */,
 				E3437E212161293000CE88BE /* TodayViewController.xib in Resources */,
@@ -1038,6 +1080,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F2BD93218FFAA30062B9D4 /* CommentViewController.swift in Sources */,
 				E3437E2B21612E9700CE88BE /* UIViewExt.swift in Sources */,
 				AC369C962113F2C300FD5A02 /* PopUpViewController.swift in Sources */,
 				B07913BB2163106000E2627C /* Film.swift in Sources */,
@@ -1056,6 +1099,7 @@
 				B050EB742114358700E16758 /* API.Feed.swift in Sources */,
 				B050E3DD216E0A69006D0614 /* ProfileViewModel.swift in Sources */,
 				B07913CD2163632D00E2627C /* ComingSoonCellViewModel.swift in Sources */,
+				F5F2BD98218FFB2E0062B9D4 /* DetailCinemaViewModel.swift in Sources */,
 				ACB045A0210F063A00159503 /* ProfileViewController.swift in Sources */,
 				E3437E0F215F8CD300CE88BE /* FilmsViewController.swift in Sources */,
 				B07913CA2163631000E2627C /* ComingSoonCell.swift in Sources */,
@@ -1079,7 +1123,9 @@
 				AC369C922113F2C300FD5A02 /* PopUpTableViewCell.swift in Sources */,
 				B051C8BF2165B69000C0CFC8 /* CinemaCellViewModel.swift in Sources */,
 				EC0105541E8F8AE000CE013D /* AppDelegate.swift in Sources */,
+				F5F2BD9C219001A50062B9D4 /* CommentCell.swift in Sources */,
 				E3437E0A215F8C1900CE88BE /* CinemaViewController.swift in Sources */,
+				F5F2BDA121901BB10062B9D4 /* Comment.swift in Sources */,
 				ACB0459C210F061C00159503 /* SearchViewController.swift in Sources */,
 				B07913C4216350F500E2627C /* TodayCellViewModel.swift in Sources */,
 				EC332A481EA0A8CB0011DF1E /* Api.swift in Sources */,
@@ -1087,6 +1133,7 @@
 				B07FECD2216EFD16007883D5 /* ProfileCellViewModel.swift in Sources */,
 				ECF23AB41E9B869B008C23C1 /* ApiManager.swift in Sources */,
 				ECEC0C5A1ED44D4100F6760A /* UIViewControllerExt.swift in Sources */,
+				F5F2BD9F219001B90062B9D4 /* CommentCellViewModel.swift in Sources */,
 				B03E5A072112DE530027188E /* URLExt.swift in Sources */,
 				ECEC0C581ED44C5D00F6760A /* String.swift in Sources */,
 				B03E5A092112DE750027188E /* Session.swift in Sources */,
@@ -1097,6 +1144,7 @@
 				ECF23ABE1E9B8A6A008C23C1 /* Error.swift in Sources */,
 				E3437E282161294F00CE88BE /* ComingSoonViewController.swift in Sources */,
 				ACB045A3210F0CEB00159503 /* BaseNavigationController.swift in Sources */,
+				F5F2BD96218FFAC60062B9D4 /* CommentViewModel.swift in Sources */,
 				B07C2CD0216C38430071959A /* NowShowingViewController.swift in Sources */,
 				B07DB1072164B9D600ECE9A9 /* CinemaViewModel.swift in Sources */,
 				EC5337B51EF7845700ACE038 /* Color.swift in Sources */,

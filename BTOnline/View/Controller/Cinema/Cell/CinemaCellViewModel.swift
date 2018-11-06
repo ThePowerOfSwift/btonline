@@ -11,7 +11,7 @@ import MVVM
 
 final class CinemaCellViewModel: ViewModel {
 
-    var cinema: Cinema
+    private var cinema: Cinema
 
     var imagePath: String {
         return cinema.imagePath

@@ -11,7 +11,7 @@ import MVVM
 
 final class NowShowingCellViewModel: ViewModel {
 
-    var film: Film
+    private var film: Film
 
     var imagePath: String {
         return film.imagePath

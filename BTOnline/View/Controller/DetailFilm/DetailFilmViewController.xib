@@ -155,7 +155,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDo-Lx-83W">
                     <rect key="frame" x="0.0" y="592" width="375" height="75"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCd-qj-e5k">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCd-qj-e5k" userLabel="Comments View">
                             <rect key="frame" x="65" y="5.5" width="93" height="64"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEE-6A-Jc4">
@@ -173,6 +173,9 @@
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CR-XP-vAa">
                                     <rect key="frame" x="0.0" y="0.0" width="93" height="64"/>
+                                    <connections>
+                                        <action selector="commentButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="aOi-rw-dYU"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -189,11 +192,11 @@
                                 <constraint firstItem="shS-2p-DFh" firstAttribute="centerX" secondItem="jCd-qj-e5k" secondAttribute="centerX" id="zcx-9U-22G"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sls-2M-9BS">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sls-2M-9BS" userLabel="Ticket view">
                             <rect key="frame" x="217" y="5.5" width="93" height="64"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Ticket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OU9-m4-SrP">
-                                    <rect key="frame" x="7" y="49" width="79" height="19"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Tickets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OU9-m4-SrP">
+                                    <rect key="frame" x="3.5" y="49" width="86" height="19"/>
                                     <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -207,6 +210,9 @@
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eh0-Ei-vfL">
                                     <rect key="frame" x="0.0" y="0.0" width="93" height="64"/>
+                                    <connections>
+                                        <action selector="getTicketsButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="fMM-Mt-ojs"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
