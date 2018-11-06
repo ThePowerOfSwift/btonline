@@ -8,20 +8,24 @@
 
 import UIKit
 
-class DetailFilmViewController: BaseViewController {
+final class DetailFilmViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBarController?.tabBar.isHidden = true
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        tabBarController?.tabBar.isHidden = false
-    }
-
     // MARK: - Action
     @IBAction func backButtonTouchUpInside(_ sender: Any) {
+        tabBarController?.tabBar.isHidden = false
         navigationController?.popViewController(animated: true)
+    }
+
+    @IBAction func commentButtonTouchUpInside(_ sender: Any) {
+        let vc = CommentViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
+    @IBAction func getTicketsButtonTouchUpInside(_ sender: Any) {
     }
 }
